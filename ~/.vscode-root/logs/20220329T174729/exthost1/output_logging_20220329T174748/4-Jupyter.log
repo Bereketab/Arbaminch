@@ -1,0 +1,85 @@
+Visual Studio Code (1.65.2, undefined, desktop)
+Jupyter Extension Version: 2022.2.1030672458.
+Python Extension Version: 2022.2.1924087327.
+Error 17:48:53: Exception while attempting zmq : [Error: /snap/core/current/usr/lib/x86_64-linux-gnu/libstdc++.so.6: version `GLIBCXX_3.4.22' not found (required by /root/.vscode/extensions/ms-toolsai.jupyter-2022.2.1030672458/out/client/node_modules/zeromq/prebuilds/linux-x64/electron.napi.glibc.node)
+	at process.func [as dlopen] (electron/js2c/asar_bundle.js:5:1846)
+	at Object.Module._extensions..node (internal/modules/cjs/loader.js:1185:18)
+	at Object.func [as .node] (electron/js2c/asar_bundle.js:5:1846)
+	at Module.load (internal/modules/cjs/loader.js:982:32)
+	at Module._load (internal/modules/cjs/loader.js:823:14)
+	at Function.f._load (electron/js2c/asar_bundle.js:5:12913)
+	at Function.n._load (/snap/code/91/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:104:32148)
+	at Function._._load (/snap/code/91/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:104:28737)
+	at Function.g._load (/snap/code/91/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:99:60372)
+	at Module.require (internal/modules/cjs/loader.js:1006:19)
+	at h (/snap/code/91/usr/share/code/resources/app/out/vs/loader.js:4:699)
+	at load (/root/.vscode/extensions/ms-toolsai.jupyter-2022.2.1030672458/out/client/node_modules/node-gyp-build/index.js:1:605)
+	at Object.<anonymous> (/root/.vscode/extensions/ms-toolsai.jupyter-2022.2.1030672458/out/client/node_modules/zeromq/lib/native.js:1:198)
+	at Module.u._compile (/snap/code/91/usr/share/code/resources/app/out/vs/loader.js:4:1313)
+	at Object.Module._extensions..js (internal/modules/cjs/loader.js:1155:10)
+	at Module.load (internal/modules/cjs/loader.js:982:32)
+	at Module._load (internal/modules/cjs/loader.js:823:14)
+	at Function.f._load (electron/js2c/asar_bundle.js:5:12913)
+	at Function.n._load (/snap/code/91/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:104:32148)
+	at Function._._load (/snap/code/91/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:104:28737)
+	at Function.g._load (/snap/code/91/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:99:60372)
+	at Module.require (internal/modules/cjs/loader.js:1006:19)
+	at h (/snap/code/91/usr/share/code/resources/app/out/vs/loader.js:4:699)
+	at Object.<anonymous> (/root/.vscode/extensions/ms-toolsai.jupyter-2022.2.1030672458/out/client/node_modules/zeromq/lib/index.js:1:144)
+	at Module.u._compile (/snap/code/91/usr/share/code/resources/app/out/vs/loader.js:4:1313)
+	at Object.Module._extensions..js (internal/modules/cjs/loader.js:1155:10)
+	at Module.load (internal/modules/cjs/loader.js:982:32)
+	at Module._load (internal/modules/cjs/loader.js:823:14)
+	at Function.f._load (electron/js2c/asar_bundle.js:5:12913)
+	at Function.n._load (/snap/code/91/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:104:32148)
+	at Function._._load (/snap/code/91/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:104:28737)
+	at Function.g._load (/snap/code/91/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:99:60372)
+	at Module.require (internal/modules/cjs/loader.js:1006:19)
+	at h (/snap/code/91/usr/share/code/resources/app/out/vs/loader.js:4:699)
+	at Object.92747 (/root/.vscode/extensions/ms-toolsai.jupyter-2022.2.1030672458/out/client/extension.js:2:3881823)
+	at __webpack_require__ (/root/.vscode/extensions/ms-toolsai.jupyter-2022.2.1030672458/out/client/extension.js:2:4549136)
+	at d.zmqSupported (/root/.vscode/extensions/ms-toolsai.jupyter-2022.2.1030672458/out/client/extension.js:2:976364)
+	at d.isSupportedForLocalLaunch (/root/.vscode/extensions/ms-toolsai.jupyter-2022.2.1030672458/out/client/extension.js:2:976155)
+	at d.get isSupported [as isSupported] (/root/.vscode/extensions/ms-toolsai.jupyter-2022.2.1030672458/out/client/extension.js:2:976065)
+	at t.registerTypes (/root/.vscode/extensions/ms-toolsai.jupyter-2022.2.1030672458/out/client/extension.js:2:987250)
+	at /root/.vscode/extensions/ms-toolsai.jupyter-2022.2.1030672458/out/client/extension.js:2:1073812
+	at processTicksAndRejections (internal/process/task_queues.js:93:5)
+	at async /root/.vscode/extensions/ms-toolsai.jupyter-2022.2.1030672458/out/client/extension.js:2:4550711
+	at async e.activate (/root/.vscode/extensions/ms-toolsai.jupyter-2022.2.1030672458/out/client/extension.js:2:4550388)
+	at async Promise.all (index 2)]
+Error 17:48:54: Jupyter Extension (Error in Failed to update settings.json, method:fixSettingsFile): [EntryNotFound (FileSystemError): Unable to read file '/root/.config/Code/User/settings.json' (Error: Unable to resolve nonexistent file '/root/.config/Code/User/settings.json')
+	at Function._handleError (/snap/code/91/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:85:83787)
+	at Object.readFile (/snap/code/91/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:85:82701)
+	at processTicksAndRejections (internal/process/task_queues.js:93:5)
+	at async m.readFile (/root/.vscode/extensions/ms-toolsai.jupyter-2022.2.1030672458/out/client/extension.js:2:116033)
+	at async g.fixSettingsFile (/root/.vscode/extensions/ms-toolsai.jupyter-2022.2.1030672458/out/client/extension.js:2:4943)
+	at async Promise.all (index 0)
+	at async g.updateSettings (/root/.vscode/extensions/ms-toolsai.jupyter-2022.2.1030672458/out/client/extension.js:2:6705)] {
+  code: 'FileNotFound'
+}
+Error 17:48:54: Jupyter Extension (Error in Failed to update settings.json, method:fixSettingsFile): [EntryNotFound (FileSystemError): Unable to read file '/home/anonymous/arbaminch/.vscode/settings.json' (Error: Unable to resolve nonexistent file '/home/anonymous/arbaminch/.vscode/settings.json')
+	at Function._handleError (/snap/code/91/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:85:83787)
+	at Object.readFile (/snap/code/91/usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:85:82701)
+	at processTicksAndRejections (internal/process/task_queues.js:93:5)
+	at async m.readFile (/root/.vscode/extensions/ms-toolsai.jupyter-2022.2.1030672458/out/client/extension.js:2:116033)
+	at async g.fixSettingsFile (/root/.vscode/extensions/ms-toolsai.jupyter-2022.2.1030672458/out/client/extension.js:2:4943)
+	at async Promise.all (index 1)
+	at async g.updateSettings (/root/.vscode/extensions/ms-toolsai.jupyter-2022.2.1030672458/out/client/extension.js:2:6705)] {
+  code: 'FileNotFound'
+}
+Info 17:48:54: Experiment status for python is {"enabled":true,"optInto":[],"optOutFrom":[]}
+Info 17:48:56: Getting activation commands for /home/anonymous/arbaminch/venv/bin/python are not cached. May take a while.
+Info 17:48:56: Activation Commands received source /home/anonymous/arbaminch/venv/bin/activate for shell bash
+Info 17:48:56: Process Execution: > /home/anonymous/arbaminch/venv/bin/python -m pip list
+> /home/anonymous/arbaminch/venv/bin/python -m pip list
+Info 17:48:56: Process Execution: > /home/anonymous/arbaminch/venv/bin/python -c "import jupyter"
+> /home/anonymous/arbaminch/venv/bin/python -c "import jupyter"
+Info 17:48:56: Process Execution: > /home/anonymous/arbaminch/venv/bin/python -c "import notebook"
+> /home/anonymous/arbaminch/venv/bin/python -c "import notebook"
+Info 21:18:54: Shutting down notebooks for 56feba6d-e30b-4fa6-b03c-580ca84a4a3b
+Info 21:18:54: Disposing HostJupyterExecution a52a780d-5cc2-43fc-8d67-b7b62a0ff380
+Info 21:18:54: Disposing super HostJupyterExecution a52a780d-5cc2-43fc-8d67-b7b62a0ff380
+Info 21:18:54: Disposing HostJupyterExecution a52a780d-5cc2-43fc-8d67-b7b62a0ff380
+Info 21:18:54: Finished disposing HostJupyterExecution  a52a780d-5cc2-43fc-8d67-b7b62a0ff380
+Info 21:18:54: Cleaning up server cache a52a780d-5cc2-43fc-8d67-b7b62a0ff380
+Info 21:18:54: Finished disposing HostJupyterExecution  a52a780d-5cc2-43fc-8d67-b7b62a0ff380

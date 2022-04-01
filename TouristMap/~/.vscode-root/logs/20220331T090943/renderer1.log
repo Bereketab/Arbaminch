@@ -1,0 +1,5 @@
+[2022-03-31 09:10:04.839] [renderer1] [info] Ignoring configured affinity for 'pub.name' because the extension is unknown or cannot execute.
+[2022-03-31 09:10:07.561] [renderer1] [error] ["Error: Unknown or unsupported transport “disabled” for address “disabled:”"]
+[2022-03-31 09:10:07.561] [renderer1] [warning] Settings Sync: Accounts are not initialized
+[2022-03-31 09:10:08.111] [renderer1] [info] Ignoring configured affinity for 'pub.name' because the extension is unknown or cannot execute.
+[2022-03-31 09:12:26.822] [renderer1] [warning] [lifecycle] onWillShutdown is taking a long time, pending operations: join.closeStorage

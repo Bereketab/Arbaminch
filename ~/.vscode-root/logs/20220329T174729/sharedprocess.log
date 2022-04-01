@@ -1,0 +1,5 @@
+[2022-03-29 17:47:37.914] [sharedprocess] [info] Starting worker process with pid 6399 (type: fileWatcher, window: 1).
+[2022-03-29 17:47:46.978] [sharedprocess] [info] Worker process with pid 6399 terminated normally (type: fileWatcher, window: 1).
+[2022-03-29 17:47:47.806] [sharedprocess] [info] Starting worker process with pid 6446 (type: fileWatcher, window: 1).
+[2022-03-29 21:05:06.615] [sharedprocess] [error] SharedProcess (worker, fileWatcher): Worker process with pid 6446 terminated by itself with code null, signal: SIGSEGV (type: fileWatcher, window: 1)
+[2022-03-29 21:05:06.871] [sharedprocess] [info] Starting worker process with pid 21844 (type: fileWatcher, window: 1).

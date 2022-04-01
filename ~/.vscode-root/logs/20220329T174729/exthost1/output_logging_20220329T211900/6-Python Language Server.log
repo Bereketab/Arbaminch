@@ -1,0 +1,85 @@
+[Info  - 9:19:09 PM] (23433) Pylance language server 2022.3.3 (pyright dd7420c5) starting
+[Info  - 9:19:09 PM] (23433) Server root directory: /root/.vscode/extensions/ms-python.vscode-pylance-2022.3.3/dist
+[Info  - 9:19:09 PM] (23433) No configuration file found.
+[Info  - 9:19:09 PM] (23433) No pyproject.toml file found.
+[Info  - 9:19:09 PM] (23433) Setting pythonPath for service "arbaminch": "/home/anonymous/arbaminch/venv/bin/python"
+[Warn  - 9:19:09 PM] (23433) stubPath /home/anonymous/arbaminch/typings is not a valid directory.
+[Info  - 9:19:09 PM] (23433) Assuming Python version 3.8
+[Info  - 9:19:09 PM] (23433) Assuming Python platform Linux
+[Warn  - 9:19:10 PM] (23433) Exception received when installing file system watcher: TypeError [ERR_FEATURE_UNAVAILABLE_ON_PLATFORM]: The feature watch recursively is unavailable on the current platform, which is being used to run Node.js
+[Warn  - 9:19:10 PM] (23433) Exception received when installing file system watcher: TypeError [ERR_FEATURE_UNAVAILABLE_ON_PLATFORM]: The feature watch recursively is unavailable on the current platform, which is being used to run Node.js
+[Info  - 9:19:10 PM] (23433) Searching for source files
+[Info  - 9:19:10 PM] (23433) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 9:19:10 PM] (23433) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 9:19:10 PM] (23433) Found 66 source files
+[Info  - 9:19:10 PM] (23433) Background analysis(1) root directory: /root/.vscode/extensions/ms-python.vscode-pylance-2022.3.3/dist
+[Info  - 9:19:10 PM] (23433) Background analysis(1) started
+[Info  - 9:19:10 PM] (23433) Background analysis(2) root directory: /root/.vscode/extensions/ms-python.vscode-pylance-2022.3.3/dist
+[Info  - 9:19:10 PM] (23433) Background analysis(2) started
+[Info  - 9:19:10 PM] (23433) No configuration file found.
+[Info  - 9:19:10 PM] (23433) No pyproject.toml file found.
+[Warn  - 9:19:10 PM] (23433) stubPath /home/anonymous/Desktop/behagerlij/typings is not a valid directory.
+[Info  - 9:19:10 PM] (23433) Assuming Python platform Linux
+[Warn  - 9:19:10 PM] (23433) Exception received when installing file system watcher: TypeError [ERR_FEATURE_UNAVAILABLE_ON_PLATFORM]: The feature watch recursively is unavailable on the current platform, which is being used to run Node.js
+[Warn  - 9:19:10 PM] (23433) Exception received when installing file system watcher: TypeError [ERR_FEATURE_UNAVAILABLE_ON_PLATFORM]: The feature watch recursively is unavailable on the current platform, which is being used to run Node.js
+[Warn  - 9:19:10 PM] (23433) Exception received when installing file system watcher: TypeError [ERR_FEATURE_UNAVAILABLE_ON_PLATFORM]: The feature watch recursively is unavailable on the current platform, which is being used to run Node.js
+[Warn  - 9:19:10 PM] (23433) Exception received when installing file system watcher: TypeError [ERR_FEATURE_UNAVAILABLE_ON_PLATFORM]: The feature watch recursively is unavailable on the current platform, which is being used to run Node.js
+[Warn  - 9:19:10 PM] (23433) Exception received when installing file system watcher: TypeError [ERR_FEATURE_UNAVAILABLE_ON_PLATFORM]: The feature watch recursively is unavailable on the current platform, which is being used to run Node.js
+[Warn  - 9:19:10 PM] (23433) Exception received when installing file system watcher: TypeError [ERR_FEATURE_UNAVAILABLE_ON_PLATFORM]: The feature watch recursively is unavailable on the current platform, which is being used to run Node.js
+[Warn  - 9:19:10 PM] (23433) Exception received when installing file system watcher: TypeError [ERR_FEATURE_UNAVAILABLE_ON_PLATFORM]: The feature watch recursively is unavailable on the current platform, which is being used to run Node.js
+[Warn  - 9:19:10 PM] (23433) Exception received when installing file system watcher: TypeError [ERR_FEATURE_UNAVAILABLE_ON_PLATFORM]: The feature watch recursively is unavailable on the current platform, which is being used to run Node.js
+[Warn  - 9:19:10 PM] (23433) Exception received when installing file system watcher: TypeError [ERR_FEATURE_UNAVAILABLE_ON_PLATFORM]: The feature watch recursively is unavailable on the current platform, which is being used to run Node.js
+[Info  - 9:19:10 PM] (23433) Searching for source files
+[Info  - 9:19:10 PM] (23433) Auto-excluding /home/anonymous/Desktop/behagerlij/venv
+[Info  - 9:19:10 PM] (23433) Found 40 source files
+[Info  - 9:19:10 PM] (23433) Indexer background runner(3) root directory: /root/.vscode/extensions/ms-python.vscode-pylance-2022.3.3/dist (index)
+[Info  - 9:19:10 PM] (23433) Indexing(3) started
+[Info  - 9:19:11 PM] (23433) Indexer done(3). indexed 440 files
+[Info  - 9:19:16 PM] (23433) Searching for source files
+[Info  - 9:19:16 PM] (23433) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 9:19:16 PM] (23433) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 9:19:16 PM] (23433) Found 66 source files
+[Info  - 9:19:44 PM] (23433) Indexer background runner(4) root directory: /root/.vscode/extensions/ms-python.vscode-pylance-2022.3.3/dist (index)
+[Info  - 9:19:44 PM] (23433) Indexing(4) started
+[Info  - 9:19:44 PM] (23433) Searching for source files
+[Info  - 9:19:45 PM] (23433) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 9:19:45 PM] (23433) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 9:19:45 PM] (23433) Found 66 source files
+[Info  - 9:19:46 PM] (23433) [IDX(4)] Long operation: scan packages (2268ms)
+[Info  - 9:19:47 PM] (23433) Searching for source files
+[Info  - 9:19:47 PM] (23433) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 9:19:47 PM] (23433) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 9:19:47 PM] (23433) Found 66 source files
+[Info  - 9:19:50 PM] (23433) [IDX(4)] Long operation: index execution environment /home/anonymous/Desktop/behagerlij (3660ms)
+[Info  - 9:19:50 PM] (23433) [IDX(4)] Long operation: index libraries /home/anonymous/Desktop/behagerlij (6045ms)
+[Info  - 9:19:50 PM] (23433) Indexer done(4). indexed 537 files
+[Info  - 9:19:55 PM] (23433) No pyproject.toml file found.
+[Info  - 9:19:55 PM] (23433) Setting pythonPath for service "<default>": "/home/anonymous/arbaminch/venv/bin/python"
+[Warn  - 9:19:55 PM] (23433) stubPath typings is not a valid directory.
+[Info  - 9:19:55 PM] (23433) Assuming Python version 3.8
+[Info  - 9:19:55 PM] (23433) Assuming Python platform Linux
+[Warn  - 9:19:55 PM] (23433) Exception received when installing file system watcher: TypeError [ERR_FEATURE_UNAVAILABLE_ON_PLATFORM]: The feature watch recursively is unavailable on the current platform, which is being used to run Node.js
+[Warn  - 9:19:55 PM] (23433) Exception received when installing file system watcher: TypeError [ERR_FEATURE_UNAVAILABLE_ON_PLATFORM]: The feature watch recursively is unavailable on the current platform, which is being used to run Node.js
+[Warn  - 9:19:55 PM] (23433) Exception received when installing file system watcher: TypeError [ERR_FEATURE_UNAVAILABLE_ON_PLATFORM]: The feature watch recursively is unavailable on the current platform, which is being used to run Node.js
+[Info  - 9:19:55 PM] (23433) Searching for source files
+[Info  - 9:19:55 PM] (23433) No source files found.
+[Info  - 9:19:56 PM] (23433) Background analysis(5) root directory: /root/.vscode/extensions/ms-python.vscode-pylance-2022.3.3/dist
+[Info  - 9:19:56 PM] (23433) Background analysis(5) started
+[Info  - 9:20:00 PM] (23433) Searching for source files
+[Info  - 9:20:00 PM] (23433) Auto-excluding /home/anonymous/Desktop/behagerlij/venv
+[Info  - 9:20:00 PM] (23433) Found 40 source files
+[Info  - 9:20:02 PM] (23433) Searching for source files
+[Info  - 9:20:02 PM] (23433) Auto-excluding /home/anonymous/Desktop/behagerlij/venv
+[Info  - 9:20:02 PM] (23433) Found 40 source files
+[Info  - 9:20:04 PM] (23433) Searching for source files
+[Info  - 9:20:04 PM] (23433) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 9:20:04 PM] (23433) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 9:20:04 PM] (23433) Found 66 source files
+[Info  - 9:20:17 PM] (23433) Searching for source files
+[Info  - 9:20:17 PM] (23433) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 9:20:17 PM] (23433) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 9:20:17 PM] (23433) Found 66 source files
+[Info  - 9:21:47 PM] (23433) Searching for source files
+[Info  - 9:21:48 PM] (23433) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 9:21:48 PM] (23433) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 9:21:48 PM] (23433) Found 66 source files

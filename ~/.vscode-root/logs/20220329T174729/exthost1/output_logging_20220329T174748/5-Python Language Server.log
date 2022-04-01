@@ -1,0 +1,747 @@
+[Info  - 5:48:57 PM] (6587) Pylance language server 2022.3.3 (pyright dd7420c5) starting
+[Info  - 5:48:57 PM] (6587) Server root directory: /root/.vscode/extensions/ms-python.vscode-pylance-2022.3.3/dist
+[Info  - 5:48:57 PM] (6587) No configuration file found.
+[Info  - 5:48:57 PM] (6587) No pyproject.toml file found.
+[Info  - 5:48:57 PM] (6587) Setting pythonPath for service "arbaminch": "/home/anonymous/arbaminch/venv/bin/python"
+[Warn  - 5:48:57 PM] (6587) stubPath /home/anonymous/arbaminch/typings is not a valid directory.
+[Info  - 5:48:57 PM] (6587) Assuming Python version 3.8
+[Info  - 5:48:57 PM] (6587) Assuming Python platform Linux
+[Warn  - 5:48:59 PM] (6587) Exception received when installing file system watcher: TypeError [ERR_FEATURE_UNAVAILABLE_ON_PLATFORM]: The feature watch recursively is unavailable on the current platform, which is being used to run Node.js
+[Warn  - 5:48:59 PM] (6587) Exception received when installing file system watcher: TypeError [ERR_FEATURE_UNAVAILABLE_ON_PLATFORM]: The feature watch recursively is unavailable on the current platform, which is being used to run Node.js
+[Info  - 5:48:59 PM] (6587) Searching for source files
+[Info  - 5:48:59 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 5:48:59 PM] (6587) Found 46 source files
+[Info  - 5:48:59 PM] (6587) Background analysis(1) root directory: /root/.vscode/extensions/ms-python.vscode-pylance-2022.3.3/dist
+[Info  - 5:48:59 PM] (6587) Background analysis(1) started
+[Info  - 5:48:59 PM] (6587) Indexer background runner(2) root directory: /root/.vscode/extensions/ms-python.vscode-pylance-2022.3.3/dist (index)
+[Info  - 5:48:59 PM] (6587) Indexing(2) started
+[Info  - 5:48:59 PM] (6587) Searching for source files
+[Info  - 5:48:59 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 5:48:59 PM] (6587) Found 46 source files
+[Info  - 5:49:01 PM] (6587) Indexer done(2). indexed 440 files
+[Info  - 5:49:14 PM] (6587) Searching for source files
+[Info  - 5:49:14 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 5:49:14 PM] (6587) Found 46 source files
+[Info  - 5:49:48 PM] (6587) Searching for source files
+[Info  - 5:49:48 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 5:49:48 PM] (6587) Found 46 source files
+[Info  - 5:50:23 PM] (6587) Searching for source files
+[Info  - 5:50:23 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 5:50:23 PM] (6587) Found 46 source files
+[Info  - 5:50:34 PM] (6587) Searching for source files
+[Info  - 5:50:34 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 5:50:34 PM] (6587) Found 46 source files
+[Info  - 5:50:48 PM] (6587) Searching for source files
+[Info  - 5:50:48 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 5:50:48 PM] (6587) Found 46 source files
+[Info  - 5:50:56 PM] (6587) Searching for source files
+[Info  - 5:50:56 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 5:50:56 PM] (6587) Found 46 source files
+[Info  - 5:51:26 PM] (6587) Searching for source files
+[Info  - 5:51:26 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 5:51:26 PM] (6587) Found 46 source files
+[Info  - 5:51:29 PM] (6587) Searching for source files
+[Info  - 5:51:29 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 5:51:29 PM] (6587) Found 46 source files
+[Info  - 5:53:33 PM] (6587) Searching for source files
+[Info  - 5:53:33 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 5:53:33 PM] (6587) Found 46 source files
+[Info  - 5:53:44 PM] (6587) Searching for source files
+[Info  - 5:53:44 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 5:53:44 PM] (6587) Found 47 source files
+[Info  - 5:54:00 PM] (6587) Searching for source files
+[Info  - 5:54:00 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 5:54:00 PM] (6587) Found 47 source files
+[Info  - 5:54:02 PM] (6587) Searching for source files
+[Info  - 5:54:02 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 5:54:02 PM] (6587) Found 47 source files
+[Info  - 5:54:04 PM] (6587) Searching for source files
+[Info  - 5:54:04 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 5:54:04 PM] (6587) Found 48 source files
+[Info  - 5:55:19 PM] (6587) Searching for source files
+[Info  - 5:55:19 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 5:55:19 PM] (6587) Found 48 source files
+[Info  - 5:55:22 PM] (6587) Searching for source files
+[Info  - 5:55:22 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 5:55:22 PM] (6587) Found 48 source files
+[Info  - 5:55:22 PM] (6587) Searching for source files
+[Info  - 5:55:22 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 5:55:22 PM] (6587) Found 47 source files
+[Info  - 5:55:23 PM] (6587) Searching for source files
+[Info  - 5:55:23 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 5:55:23 PM] (6587) Found 47 source files
+[Info  - 5:55:32 PM] (6587) Searching for source files
+[Info  - 5:55:32 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 5:55:32 PM] (6587) Found 48 source files
+[Info  - 5:55:48 PM] (6587) Searching for source files
+[Info  - 5:55:48 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 5:55:48 PM] (6587) Found 48 source files
+[Info  - 5:55:48 PM] (6587) Searching for source files
+[Info  - 5:55:48 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 5:55:48 PM] (6587) Found 45 source files
+[Info  - 5:55:50 PM] (6587) Searching for source files
+[Info  - 5:55:50 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 5:55:50 PM] (6587) Found 45 source files
+[Info  - 5:55:59 PM] (6587) Searching for source files
+[Info  - 5:55:59 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 5:55:59 PM] (6587) Found 47 source files
+[Info  - 5:56:48 PM] (6587) Searching for source files
+[Info  - 5:56:48 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 5:56:48 PM] (6587) Found 47 source files
+[Info  - 5:56:52 PM] (6587) Searching for source files
+[Info  - 5:56:52 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 5:56:52 PM] (6587) Found 47 source files
+[Info  - 5:56:54 PM] (6587) Searching for source files
+[Info  - 5:56:55 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 5:56:55 PM] (6587) Found 47 source files
+[Info  - 5:57:05 PM] (6587) Searching for source files
+[Info  - 5:57:05 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 5:57:05 PM] (6587) Found 48 source files
+[Info  - 5:57:12 PM] (6587) Searching for source files
+[Info  - 5:57:12 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 5:57:12 PM] (6587) Found 48 source files
+[Info  - 5:58:29 PM] (6587) Searching for source files
+[Info  - 5:58:29 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 5:58:29 PM] (6587) Found 48 source files
+[Info  - 5:58:37 PM] (6587) Searching for source files
+[Info  - 5:58:37 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 5:58:37 PM] (6587) Found 70 source files
+[Info  - 5:59:02 PM] (6587) Searching for source files
+[Info  - 5:59:02 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-crud-example-master/venv
+[Info  - 5:59:02 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 5:59:02 PM] (6587) Found 70 source files
+[Info  - 6:00:18 PM] (6587) Searching for source files
+[Info  - 6:00:18 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-crud-example-master/venv
+[Info  - 6:00:18 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:00:18 PM] (6587) Found 70 source files
+[Info  - 6:00:33 PM] (6587) Searching for source files
+[Info  - 6:00:34 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-crud-example-master/venv
+[Info  - 6:00:34 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:00:34 PM] (6587) Found 70 source files
+[Info  - 6:00:43 PM] (6587) Searching for source files
+[Info  - 6:00:43 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-crud-example-master/venv
+[Info  - 6:00:43 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:00:43 PM] (6587) Found 70 source files
+[Info  - 6:01:38 PM] (6587) Searching for source files
+[Info  - 6:01:38 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-crud-example-master/venv
+[Info  - 6:01:38 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:01:38 PM] (6587) Found 70 source files
+[Info  - 6:01:46 PM] (6587) Searching for source files
+[Info  - 6:01:46 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-crud-example-master/venv
+[Info  - 6:01:46 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:01:46 PM] (6587) Found 70 source files
+[Info  - 6:02:46 PM] (6587) Searching for source files
+[Info  - 6:02:46 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-crud-example-master/venv
+[Info  - 6:02:46 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:02:46 PM] (6587) Found 70 source files
+[Info  - 6:02:48 PM] (6587) Searching for source files
+[Info  - 6:02:48 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-crud-example-master/venv
+[Info  - 6:02:48 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:02:48 PM] (6587) Found 70 source files
+[Info  - 6:03:19 PM] (6587) Searching for source files
+[Info  - 6:03:19 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-crud-example-master/venv
+[Info  - 6:03:19 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:03:19 PM] (6587) Found 70 source files
+[Info  - 6:06:00 PM] (6587) Searching for source files
+[Info  - 6:06:00 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:06:00 PM] (6587) Found 48 source files
+[Info  - 6:06:19 PM] (6587) Searching for source files
+[Info  - 6:06:19 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:06:19 PM] (6587) Found 48 source files
+[Info  - 6:06:27 PM] (6587) Searching for source files
+[Info  - 6:06:27 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:06:27 PM] (6587) Found 73 source files
+[Info  - 6:06:48 PM] (6587) Searching for source files
+[Info  - 6:06:48 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:06:48 PM] (6587) Found 73 source files
+[Info  - 6:07:09 PM] (6587) Searching for source files
+[Info  - 6:07:09 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:07:09 PM] (6587) Found 73 source files
+[Info  - 6:07:11 PM] (6587) Searching for source files
+[Info  - 6:07:11 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:07:11 PM] (6587) Found 73 source files
+[Info  - 6:07:11 PM] (6587) Searching for source files
+[Info  - 6:07:12 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:07:12 PM] (6587) Found 73 source files
+[Info  - 6:09:22 PM] (6587) Searching for source files
+[Info  - 6:09:22 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:09:22 PM] (6587) Found 73 source files
+[Info  - 6:09:23 PM] (6587) Searching for source files
+[Info  - 6:09:23 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:09:23 PM] (6587) Found 73 source files
+[Info  - 6:09:24 PM] (6587) Searching for source files
+[Info  - 6:09:24 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:09:24 PM] (6587) Found 73 source files
+[Info  - 6:09:25 PM] (6587) Searching for source files
+[Info  - 6:09:25 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:09:25 PM] (6587) Found 73 source files
+[Info  - 6:09:28 PM] (6587) Searching for source files
+[Info  - 6:09:28 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:09:28 PM] (6587) Found 73 source files
+[Info  - 6:10:04 PM] (6587) Searching for source files
+[Info  - 6:10:04 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:10:04 PM] (6587) Found 73 source files
+[Info  - 6:10:49 PM] (6587) Searching for source files
+[Info  - 6:10:49 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:10:49 PM] (6587) Found 73 source files
+[Info  - 6:11:16 PM] (6587) Searching for source files
+[Info  - 6:11:17 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:11:17 PM] (6587) Found 73 source files
+[Info  - 6:11:48 PM] (6587) Searching for source files
+[Info  - 6:11:48 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:11:48 PM] (6587) Found 73 source files
+[Info  - 6:12:16 PM] (6587) Searching for source files
+[Info  - 6:12:16 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:12:16 PM] (6587) Found 73 source files
+[Info  - 6:12:18 PM] (6587) Searching for source files
+[Info  - 6:12:18 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:12:18 PM] (6587) Found 64 source files
+[Info  - 6:12:28 PM] (6587) Searching for source files
+[Info  - 6:12:28 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:12:28 PM] (6587) Found 64 source files
+[Info  - 6:12:48 PM] (6587) Searching for source files
+[Info  - 6:12:48 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:12:48 PM] (6587) Found 64 source files
+[Info  - 6:13:41 PM] (6587) Searching for source files
+[Info  - 6:13:41 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:13:41 PM] (6587) Found 71 source files
+[Info  - 6:13:48 PM] (6587) Searching for source files
+[Info  - 6:13:48 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:13:48 PM] (6587) Found 71 source files
+[Info  - 6:14:03 PM] (6587) Searching for source files
+[Info  - 6:14:03 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:14:03 PM] (6587) Found 67 source files
+[Info  - 6:14:27 PM] (6587) Searching for source files
+[Info  - 6:14:27 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:14:27 PM] (6587) Found 73 source files
+[Info  - 6:14:30 PM] (6587) Searching for source files
+[Info  - 6:14:30 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:14:30 PM] (6587) Found 73 source files
+[Info  - 6:14:48 PM] (6587) Searching for source files
+[Info  - 6:14:48 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:14:48 PM] (6587) Found 73 source files
+[Info  - 6:15:02 PM] (6587) Searching for source files
+[Info  - 6:15:02 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:15:02 PM] (6587) Found 73 source files
+[Info  - 6:15:03 PM] (6587) Searching for source files
+[Info  - 6:15:03 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:15:03 PM] (6587) Found 73 source files
+[Info  - 6:15:20 PM] (6587) Searching for source files
+[Info  - 6:15:20 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:15:20 PM] (6587) Found 73 source files
+[Info  - 6:15:48 PM] (6587) Searching for source files
+[Info  - 6:15:48 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:15:48 PM] (6587) Found 73 source files
+[Info  - 6:16:11 PM] (6587) Searching for source files
+[Info  - 6:16:11 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:16:11 PM] (6587) Found 73 source files
+[Info  - 6:17:11 PM] (6587) Searching for source files
+[Info  - 6:17:11 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:17:11 PM] (6587) Found 73 source files
+[Info  - 6:17:44 PM] (6587) Searching for source files
+[Info  - 6:17:44 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:17:44 PM] (6587) Found 73 source files
+[Info  - 6:18:25 PM] (6587) Searching for source files
+[Info  - 6:18:26 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:18:26 PM] (6587) Found 73 source files
+[Info  - 6:18:48 PM] (6587) Searching for source files
+[Info  - 6:18:48 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:18:48 PM] (6587) Found 73 source files
+[Info  - 6:19:20 PM] (6587) Searching for source files
+[Info  - 6:19:20 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:19:20 PM] (6587) Found 73 source files
+[Info  - 6:20:19 PM] (6587) Searching for source files
+[Info  - 6:20:19 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:20:19 PM] (6587) Found 73 source files
+[Info  - 6:20:20 PM] (6587) Searching for source files
+[Info  - 6:20:20 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:20:20 PM] (6587) Found 74 source files
+[Info  - 6:20:36 PM] (6587) Searching for source files
+[Info  - 6:20:36 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:20:36 PM] (6587) Found 74 source files
+[Info  - 6:21:33 PM] (6587) Searching for source files
+[Info  - 6:21:34 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:21:34 PM] (6587) Found 74 source files
+[Info  - 6:21:38 PM] (6587) Searching for source files
+[Info  - 6:21:38 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:21:38 PM] (6587) Found 74 source files
+[Info  - 6:21:48 PM] (6587) Searching for source files
+[Info  - 6:21:48 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:21:48 PM] (6587) Found 74 source files
+[Info  - 6:22:31 PM] (6587) Searching for source files
+[Info  - 6:22:31 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:22:31 PM] (6587) Found 74 source files
+[Info  - 6:22:35 PM] (6587) Searching for source files
+[Info  - 6:22:35 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:22:35 PM] (6587) Found 74 source files
+[Info  - 6:22:48 PM] (6587) Searching for source files
+[Info  - 6:22:48 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:22:48 PM] (6587) Found 74 source files
+[Info  - 6:23:01 PM] (6587) Searching for source files
+[Info  - 6:23:01 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:23:01 PM] (6587) Found 74 source files
+[Info  - 6:23:17 PM] (6587) Searching for source files
+[Info  - 6:23:18 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:23:18 PM] (6587) Found 74 source files
+[Info  - 6:23:43 PM] (6587) Searching for source files
+[Info  - 6:23:44 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:23:44 PM] (6587) Found 74 source files
+[Info  - 6:23:51 PM] (6587) Searching for source files
+[Info  - 6:23:51 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:23:51 PM] (6587) Found 74 source files
+[Info  - 6:24:13 PM] (6587) Searching for source files
+[Info  - 6:24:13 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:24:13 PM] (6587) Found 74 source files
+[Info  - 6:24:20 PM] (6587) Searching for source files
+[Info  - 6:24:20 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:24:20 PM] (6587) Found 74 source files
+[Info  - 6:24:22 PM] (6587) Searching for source files
+[Info  - 6:24:22 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:24:22 PM] (6587) Found 74 source files
+[Info  - 6:24:49 PM] (6587) Searching for source files
+[Info  - 6:24:49 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:24:49 PM] (6587) Found 74 source files
+[Info  - 6:24:53 PM] (6587) Searching for source files
+[Info  - 6:24:53 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:24:53 PM] (6587) Found 74 source files
+[Info  - 6:25:19 PM] (6587) Searching for source files
+[Info  - 6:25:19 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:25:19 PM] (6587) Found 74 source files
+[Info  - 6:25:41 PM] (6587) Searching for source files
+[Info  - 6:25:41 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:25:41 PM] (6587) Found 74 source files
+[Info  - 6:25:47 PM] (6587) Searching for source files
+[Info  - 6:25:48 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:25:48 PM] (6587) Found 74 source files
+[Info  - 6:25:48 PM] (6587) Searching for source files
+[Info  - 6:25:49 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:25:49 PM] (6587) Found 74 source files
+[Info  - 6:25:50 PM] (6587) Searching for source files
+[Info  - 6:25:51 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:25:51 PM] (6587) Found 74 source files
+[Info  - 6:25:59 PM] (6587) Searching for source files
+[Info  - 6:25:59 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:25:59 PM] (6587) Found 74 source files
+[Info  - 6:26:19 PM] (6587) Searching for source files
+[Info  - 6:26:19 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:26:19 PM] (6587) Found 74 source files
+[Info  - 6:26:46 PM] (6587) Searching for source files
+[Info  - 6:26:47 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:26:47 PM] (6587) Found 74 source files
+[Info  - 6:27:37 PM] (6587) Searching for source files
+[Info  - 6:27:37 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:27:37 PM] (6587) Found 74 source files
+[Info  - 6:27:45 PM] (6587) Indexer background runner(3) root directory: /root/.vscode/extensions/ms-python.vscode-pylance-2022.3.3/dist (refresh)
+[Info  - 6:27:45 PM] (6587) Indexing(3) started
+[Info  - 6:27:46 PM] (6587) Indexer done(3). indexed 440 files
+[Info  - 6:28:23 PM] (6587) Searching for source files
+[Info  - 6:28:23 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:28:23 PM] (6587) Found 74 source files
+[Info  - 6:28:28 PM] (6587) Searching for source files
+[Info  - 6:28:28 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:28:28 PM] (6587) Found 74 source files
+[Info  - 6:29:23 PM] (6587) Searching for source files
+[Info  - 6:29:23 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:29:23 PM] (6587) Found 74 source files
+[Info  - 6:29:43 PM] (6587) Searching for source files
+[Info  - 6:29:43 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:29:43 PM] (6587) Found 74 source files
+[Info  - 6:30:24 PM] (6587) Searching for source files
+[Info  - 6:30:24 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:30:24 PM] (6587) Found 74 source files
+[Info  - 6:30:48 PM] (6587) Searching for source files
+[Info  - 6:30:48 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:30:48 PM] (6587) Found 74 source files
+[Info  - 6:31:10 PM] (6587) Searching for source files
+[Info  - 6:31:10 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:31:10 PM] (6587) Found 74 source files
+[Info  - 6:31:48 PM] (6587) Searching for source files
+[Info  - 6:31:49 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:31:49 PM] (6587) Found 74 source files
+[Info  - 6:32:05 PM] (6587) Searching for source files
+[Info  - 6:32:05 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:32:05 PM] (6587) Found 74 source files
+[Info  - 6:32:18 PM] (6587) Searching for source files
+[Info  - 6:32:18 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:32:18 PM] (6587) Found 74 source files
+[Info  - 6:32:30 PM] (6587) Searching for source files
+[Info  - 6:32:30 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:32:30 PM] (6587) Found 74 source files
+[Info  - 6:32:35 PM] (6587) Searching for source files
+[Info  - 6:32:36 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:32:36 PM] (6587) Found 74 source files
+[Info  - 6:32:39 PM] (6587) Searching for source files
+[Info  - 6:32:39 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:32:39 PM] (6587) Found 74 source files
+[Info  - 6:32:45 PM] (6587) Searching for source files
+[Info  - 6:32:45 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:32:45 PM] (6587) Found 74 source files
+[Info  - 6:32:49 PM] (6587) Searching for source files
+[Info  - 6:32:49 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:32:49 PM] (6587) Found 74 source files
+[Info  - 6:33:32 PM] (6587) Searching for source files
+[Info  - 6:33:32 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:33:32 PM] (6587) Found 74 source files
+[Info  - 6:33:34 PM] (6587) Searching for source files
+[Info  - 6:33:34 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:33:34 PM] (6587) Found 74 source files
+[Info  - 6:34:48 PM] (6587) Searching for source files
+[Info  - 6:34:49 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:34:49 PM] (6587) Found 73 source files
+[Info  - 6:34:54 PM] (6587) Searching for source files
+[Info  - 6:34:54 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:34:54 PM] (6587) Found 73 source files
+[Info  - 6:34:57 PM] (6587) Searching for source files
+[Info  - 6:34:57 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:34:57 PM] (6587) Found 73 source files
+[Info  - 6:35:06 PM] (6587) Searching for source files
+[Info  - 6:35:06 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:35:06 PM] (6587) Found 88 source files
+[Info  - 6:35:38 PM] (6587) Searching for source files
+[Info  - 6:35:38 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-ajax-search-master/venv
+[Info  - 6:35:38 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:35:38 PM] (6587) Found 88 source files
+[Info  - 6:35:48 PM] (6587) Searching for source files
+[Info  - 6:35:49 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-ajax-search-master/venv
+[Info  - 6:35:49 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:35:49 PM] (6587) Found 88 source files
+[Info  - 6:38:24 PM] (6587) Searching for source files
+[Info  - 6:38:24 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-ajax-search-master/venv
+[Info  - 6:38:24 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:38:24 PM] (6587) Found 88 source files
+[Info  - 6:43:30 PM] (6587) Searching for source files
+[Info  - 6:43:30 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-ajax-search-master/venv
+[Info  - 6:43:30 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:43:30 PM] (6587) Found 88 source files
+[Info  - 6:44:10 PM] (6587) Searching for source files
+[Info  - 6:44:10 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-ajax-search-master/venv
+[Info  - 6:44:10 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:44:10 PM] (6587) Found 88 source files
+[Info  - 6:46:04 PM] (6587) Searching for source files
+[Info  - 6:46:04 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-ajax-search-master/venv
+[Info  - 6:46:04 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:46:04 PM] (6587) Found 88 source files
+[Info  - 6:47:26 PM] (6587) Searching for source files
+[Info  - 6:47:26 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-ajax-search-master/venv
+[Info  - 6:47:26 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:47:26 PM] (6587) Found 88 source files
+[Info  - 6:47:31 PM] (6587) Searching for source files
+[Info  - 6:47:31 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-ajax-search-master/venv
+[Info  - 6:47:31 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:47:31 PM] (6587) Found 88 source files
+[Info  - 6:47:35 PM] (6587) Searching for source files
+[Info  - 6:47:35 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-ajax-search-master/venv
+[Info  - 6:47:35 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:47:35 PM] (6587) Found 88 source files
+[Info  - 6:47:39 PM] (6587) Searching for source files
+[Info  - 6:47:39 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-ajax-search-master/venv
+[Info  - 6:47:39 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:47:39 PM] (6587) Found 88 source files
+[Info  - 6:47:45 PM] (6587) Searching for source files
+[Info  - 6:47:45 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-ajax-search-master/venv
+[Info  - 6:47:45 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:47:45 PM] (6587) Found 88 source files
+[Info  - 6:48:18 PM] (6587) Searching for source files
+[Info  - 6:48:18 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-ajax-search-master/venv
+[Info  - 6:48:18 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:48:18 PM] (6587) Found 88 source files
+[Info  - 6:48:20 PM] (6587) Searching for source files
+[Info  - 6:48:20 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-ajax-search-master/venv
+[Info  - 6:48:20 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:48:20 PM] (6587) Found 88 source files
+[Info  - 6:48:28 PM] (6587) Searching for source files
+[Info  - 6:48:28 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-ajax-search-master/venv
+[Info  - 6:48:28 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:48:28 PM] (6587) Found 64 source files
+[Info  - 6:48:40 PM] (6587) Searching for source files
+[Info  - 6:48:40 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-ajax-search-master/venv
+[Info  - 6:48:40 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:48:40 PM] (6587) Found 64 source files
+[Info  - 6:48:49 PM] (6587) Searching for source files
+[Info  - 6:48:49 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-ajax-search-master/venv
+[Info  - 6:48:49 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:48:49 PM] (6587) Found 64 source files
+[Info  - 6:49:19 PM] (6587) Searching for source files
+[Info  - 6:49:19 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-ajax-search-master/venv
+[Info  - 6:49:19 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:49:19 PM] (6587) Found 64 source files
+[Info  - 6:49:39 PM] (6587) Searching for source files
+[Info  - 6:49:39 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-ajax-search-master/venv
+[Info  - 6:49:39 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:49:39 PM] (6587) Found 64 source files
+[Info  - 6:50:20 PM] (6587) Searching for source files
+[Info  - 6:50:20 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-ajax-search-master/venv
+[Info  - 6:50:20 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:50:20 PM] (6587) Found 64 source files
+[Info  - 6:50:21 PM] (6587) Searching for source files
+[Info  - 6:50:21 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-ajax-search-master/venv
+[Info  - 6:50:21 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:50:21 PM] (6587) Found 64 source files
+[Info  - 6:50:53 PM] (6587) Searching for source files
+[Info  - 6:50:53 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-ajax-search-master/venv
+[Info  - 6:50:53 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:50:53 PM] (6587) Found 64 source files
+[Info  - 6:51:20 PM] (6587) Searching for source files
+[Info  - 6:51:20 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-ajax-search-master/venv
+[Info  - 6:51:20 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:51:20 PM] (6587) Found 64 source files
+[Info  - 6:51:37 PM] (6587) Searching for source files
+[Info  - 6:51:37 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-ajax-search-master/venv
+[Info  - 6:51:37 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:51:37 PM] (6587) Found 64 source files
+[Info  - 6:51:49 PM] (6587) Searching for source files
+[Info  - 6:51:49 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-ajax-search-master/venv
+[Info  - 6:51:49 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:51:49 PM] (6587) Found 64 source files
+[Info  - 6:52:08 PM] (6587) Searching for source files
+[Info  - 6:52:08 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-ajax-search-master/venv
+[Info  - 6:52:08 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:52:08 PM] (6587) Found 64 source files
+[Info  - 6:52:48 PM] (6587) Searching for source files
+[Info  - 6:52:48 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-ajax-search-master/venv
+[Info  - 6:52:48 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:52:48 PM] (6587) Found 64 source files
+[Info  - 6:53:45 PM] (6587) Searching for source files
+[Info  - 6:53:45 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-ajax-search-master/venv
+[Info  - 6:53:45 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:53:45 PM] (6587) Found 64 source files
+[Info  - 6:53:45 PM] (6587) Searching for source files
+[Info  - 6:53:45 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-ajax-search-master/venv
+[Info  - 6:53:45 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:53:45 PM] (6587) Found 64 source files
+[Info  - 6:54:03 PM] (6587) Searching for source files
+[Info  - 6:54:03 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-ajax-search-master/venv
+[Info  - 6:54:03 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:54:03 PM] (6587) Found 64 source files
+[Info  - 6:54:09 PM] (6587) Searching for source files
+[Info  - 6:54:09 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-ajax-search-master/venv
+[Info  - 6:54:09 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:54:09 PM] (6587) Found 59 source files
+[Info  - 6:54:13 PM] (6587) Searching for source files
+[Info  - 6:54:13 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-ajax-search-master/venv
+[Info  - 6:54:13 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:54:13 PM] (6587) Found 59 source files
+[Info  - 6:54:19 PM] (6587) Searching for source files
+[Info  - 6:54:19 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-ajax-search-master/venv
+[Info  - 6:54:19 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:54:19 PM] (6587) Found 59 source files
+[Info  - 6:54:25 PM] (6587) Searching for source files
+[Info  - 6:54:25 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:54:25 PM] (6587) Found 49 source files
+[Info  - 6:54:27 PM] (6587) Searching for source files
+[Info  - 6:54:27 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:54:27 PM] (6587) Found 49 source files
+[Info  - 6:57:39 PM] (6587) Searching for source files
+[Info  - 6:57:39 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:57:39 PM] (6587) Found 49 source files
+[Info  - 6:57:43 PM] (6587) Searching for source files
+[Info  - 6:57:43 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 6:57:43 PM] (6587) Found 64 source files
+[Info  - 7:07:19 PM] (6587) Searching for source files
+[Info  - 7:07:19 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 7:07:19 PM] (6587) Found 64 source files
+[Info  - 7:07:28 PM] (6587) Searching for source files
+[Info  - 7:07:29 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 7:07:29 PM] (6587) Found 64 source files
+[Info  - 7:07:40 PM] (6587) Searching for source files
+[Info  - 7:07:40 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 7:07:40 PM] (6587) Found 64 source files
+[Info  - 7:19:49 PM] (6587) Searching for source files
+[Info  - 7:19:49 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 7:19:49 PM] (6587) Found 49 source files
+[Info  - 7:20:10 PM] (6587) Searching for source files
+[Info  - 7:20:10 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 7:20:10 PM] (6587) Found 49 source files
+[Info  - 7:20:14 PM] (6587) Searching for source files
+[Info  - 7:20:14 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 7:20:14 PM] (6587) Found 65 source files
+[Info  - 7:20:49 PM] (6587) Searching for source files
+[Info  - 7:20:49 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 7:20:49 PM] (6587) Found 65 source files
+[Info  - 7:20:53 PM] (6587) Searching for source files
+[Info  - 7:20:53 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 7:20:53 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 7:20:53 PM] (6587) Found 65 source files
+[Info  - 7:20:55 PM] (6587) Searching for source files
+[Info  - 7:20:55 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 7:20:55 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 7:20:55 PM] (6587) Found 65 source files
+[Info  - 7:21:14 PM] (6587) Searching for source files
+[Info  - 7:21:14 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 7:21:14 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 7:21:14 PM] (6587) Found 65 source files
+[Info  - 7:21:15 PM] (6587) Searching for source files
+[Info  - 7:21:15 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 7:21:15 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 7:21:15 PM] (6587) Found 65 source files
+[Info  - 7:21:16 PM] (6587) Searching for source files
+[Info  - 7:21:16 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 7:21:16 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 7:21:16 PM] (6587) Found 65 source files
+[Info  - 7:21:17 PM] (6587) Searching for source files
+[Info  - 7:21:17 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 7:21:17 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 7:21:17 PM] (6587) Found 65 source files
+[Info  - 7:21:19 PM] (6587) Searching for source files
+[Info  - 7:21:19 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 7:21:19 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 7:21:19 PM] (6587) Found 65 source files
+[Info  - 7:21:50 PM] (6587) Searching for source files
+[Info  - 7:21:50 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 7:21:50 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 7:21:50 PM] (6587) Found 65 source files
+[Info  - 7:22:29 PM] (6587) Searching for source files
+[Info  - 7:22:29 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 7:22:29 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 7:22:29 PM] (6587) Found 65 source files
+[Info  - 7:23:36 PM] (6587) Searching for source files
+[Info  - 7:23:36 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 7:23:36 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 7:23:36 PM] (6587) Found 65 source files
+[Info  - 7:23:49 PM] (6587) Searching for source files
+[Info  - 7:23:49 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 7:23:49 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 7:23:49 PM] (6587) Found 65 source files
+[Info  - 7:23:57 PM] (6587) Searching for source files
+[Info  - 7:23:57 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 7:23:57 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 7:23:57 PM] (6587) Found 65 source files
+[Info  - 7:24:28 PM] (6587) Searching for source files
+[Info  - 7:24:28 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 7:24:28 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 7:24:28 PM] (6587) Found 65 source files
+[Info  - 7:25:33 PM] (6587) Searching for source files
+[Info  - 7:25:33 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 7:25:33 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 7:25:33 PM] (6587) Found 65 source files
+[Info  - 7:25:49 PM] (6587) Searching for source files
+[Info  - 7:25:49 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 7:25:49 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 7:25:49 PM] (6587) Found 65 source files
+[Info  - 7:26:19 PM] (6587) Searching for source files
+[Info  - 7:26:19 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 7:26:19 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 7:26:19 PM] (6587) Found 65 source files
+[Info  - 7:26:49 PM] (6587) Searching for source files
+[Info  - 7:26:49 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 7:26:49 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 7:26:49 PM] (6587) Found 65 source files
+[Info  - 7:26:52 PM] (6587) Searching for source files
+[Info  - 7:26:52 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 7:26:52 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 7:26:52 PM] (6587) Found 65 source files
+[Info  - 7:27:35 PM] (6587) Searching for source files
+[Info  - 7:27:35 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 7:27:35 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 7:27:35 PM] (6587) Found 65 source files
+[Info  - 7:27:39 PM] (6587) Searching for source files
+[Info  - 7:27:39 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 7:27:39 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 7:27:39 PM] (6587) Found 65 source files
+[Info  - 7:27:49 PM] (6587) Searching for source files
+[Info  - 7:27:49 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 7:27:49 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 7:27:49 PM] (6587) Found 65 source files
+[Info  - 7:27:59 PM] (6587) Searching for source files
+[Info  - 7:27:59 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 7:27:59 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 7:27:59 PM] (6587) Found 66 source files
+[Info  - 7:28:01 PM] (6587) Searching for source files
+[Info  - 7:28:01 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 7:28:01 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 7:28:01 PM] (6587) Found 66 source files
+[Info  - 8:17:29 PM] (6587) Searching for source files
+[Info  - 8:17:29 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 8:17:29 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 8:17:29 PM] (6587) Found 66 source files
+[Info  - 8:17:35 PM] (6587) Searching for source files
+[Info  - 8:17:35 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 8:17:35 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 8:17:35 PM] (6587) Found 66 source files
+[Info  - 8:45:36 PM] (6587) Searching for source files
+[Info  - 8:45:36 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 8:45:36 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 8:45:36 PM] (6587) Found 66 source files
+[Info  - 8:45:36 PM] (6587) Searching for source files
+[Info  - 8:45:36 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 8:45:36 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 8:45:36 PM] (6587) Found 66 source files
+[Info  - 8:46:07 PM] (6587) Searching for source files
+[Info  - 8:46:07 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 8:46:07 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 8:46:07 PM] (6587) Found 66 source files
+[Info  - 8:46:22 PM] (6587) Searching for source files
+[Info  - 8:46:22 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 8:46:22 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 8:46:22 PM] (6587) Found 66 source files
+[Info  - 8:46:24 PM] (6587) Searching for source files
+[Info  - 8:46:24 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 8:46:24 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 8:46:24 PM] (6587) Found 66 source files
+[Info  - 8:55:39 PM] (6587) Indexer background runner(4) root directory: /root/.vscode/extensions/ms-python.vscode-pylance-2022.3.3/dist (refresh)
+[Info  - 8:55:39 PM] (6587) Indexing(4) started
+[Info  - 8:55:42 PM] (6587) [IDX(4)] Long operation: index libraries /home/anonymous/arbaminch (2908ms)
+[Info  - 8:55:42 PM] (6587) Indexer done(4). indexed 440 files
+[Info  - 8:57:05 PM] (6587) Searching for source files
+[Info  - 8:57:05 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 8:57:05 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 8:57:05 PM] (6587) Found 66 source files
+[Info  - 8:57:15 PM] (6587) Searching for source files
+[Info  - 8:57:15 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 8:57:15 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 8:57:15 PM] (6587) Found 66 source files
+[Info  - 8:57:33 PM] (6587) Searching for source files
+[Info  - 8:57:33 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 8:57:33 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 8:57:33 PM] (6587) Found 66 source files
+[Info  - 8:57:43 PM] (6587) Searching for source files
+[Info  - 8:57:43 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 8:57:43 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 8:57:43 PM] (6587) Found 66 source files
+[Info  - 8:57:49 PM] (6587) Searching for source files
+[Info  - 8:57:49 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 8:57:49 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 8:57:49 PM] (6587) Found 66 source files
+[Info  - 8:57:59 PM] (6587) Searching for source files
+[Info  - 8:57:59 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 8:57:59 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 8:57:59 PM] (6587) Found 66 source files
+[Info  - 8:58:57 PM] (6587) Searching for source files
+[Info  - 8:58:57 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 8:58:57 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 8:58:57 PM] (6587) Found 66 source files
+[Info  - 8:59:07 PM] (6587) Searching for source files
+[Info  - 8:59:07 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 8:59:07 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 8:59:07 PM] (6587) Found 66 source files
+[Info  - 8:59:45 PM] (6587) Searching for source files
+[Info  - 8:59:46 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 8:59:46 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 8:59:46 PM] (6587) Found 66 source files
+[Info  - 9:03:45 PM] (6587) Searching for source files
+[Info  - 9:03:46 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 9:03:46 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 9:03:46 PM] (6587) Found 66 source files
+[Info  - 9:03:48 PM] (6587) Searching for source files
+[Info  - 9:03:48 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 9:03:48 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 9:03:48 PM] (6587) Found 66 source files
+[Info  - 9:05:04 PM] (6587) Searching for source files
+[Info  - 9:05:04 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 9:05:04 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 9:05:04 PM] (6587) Found 66 source files
+[Info  - 9:05:05 PM] (6587) Searching for source files
+[Info  - 9:05:05 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 9:05:05 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 9:05:05 PM] (6587) Found 66 source files
+[Info  - 9:15:05 PM] (6587) Indexer background runner(5) root directory: /root/.vscode/extensions/ms-python.vscode-pylance-2022.3.3/dist (refresh)
+[Info  - 9:15:05 PM] (6587) Indexing(5) started
+[Info  - 9:15:06 PM] (6587) Indexer done(5). indexed 440 files
+[Info  - 9:18:22 PM] (6587) Searching for source files
+[Info  - 9:18:22 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 9:18:22 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 9:18:22 PM] (6587) Found 66 source files
+[Info  - 9:18:51 PM] (6587) Searching for source files
+[Info  - 9:18:51 PM] (6587) Auto-excluding /home/anonymous/arbaminch/django-autocomplete-search-main/venv
+[Info  - 9:18:51 PM] (6587) Auto-excluding /home/anonymous/arbaminch/venv
+[Info  - 9:18:52 PM] (6587) Found 66 source files

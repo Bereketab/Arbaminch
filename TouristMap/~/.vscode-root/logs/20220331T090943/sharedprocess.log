@@ -1,0 +1,22 @@
+[2022-03-31 09:10:10.663] [sharedprocess] [info] Starting worker process with pid 56464 (type: fileWatcher, window: 1).
+[2022-03-31 09:10:14.521] [sharedprocess] [info] Getting Manifest... ms-python.python
+[2022-03-31 09:10:14.522] [sharedprocess] [info] Getting Manifest... ms-python.vscode-pylance
+[2022-03-31 09:10:14.523] [sharedprocess] [info] Getting Manifest... ms-toolsai.jupyter
+[2022-03-31 09:10:15.195] [sharedprocess] [info] Installing extension: ms-python.vscode-pylance
+[2022-03-31 09:10:15.587] [sharedprocess] [info] Installing extension: ms-python.python
+[2022-03-31 09:10:15.981] [sharedprocess] [info] Installing extension: ms-toolsai.jupyter
+[2022-03-31 09:11:11.744] [sharedprocess] [info] Downloaded extension: ms-toolsai.jupyter /home/anonymous/arbaminch/TouristMap/~/.vscode-root/CachedExtensionVSIXs/ms-toolsai.jupyter-2022.3.1000901801
+[2022-03-31 09:11:12.661] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.72677386-ae8f-49ce-bd71-2f917faafe9f: ms-toolsai.jupyter
+[2022-03-31 09:11:12.850] [sharedprocess] [info] Renamed to /root/.vscode/extensions/ms-toolsai.jupyter-2022.3.1000901801
+[2022-03-31 09:11:12.868] [sharedprocess] [info] Extracting completed. ms-toolsai.jupyter
+[2022-03-31 09:11:13.127] [sharedprocess] [info] Extension installed successfully: ms-toolsai.jupyter
+[2022-03-31 09:12:03.197] [sharedprocess] [info] Downloaded extension: ms-python.python /home/anonymous/arbaminch/TouristMap/~/.vscode-root/CachedExtensionVSIXs/ms-python.python-2022.4.0
+[2022-03-31 09:12:04.549] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.5ebc18fc-e045-47d9-b8b7-e17274fb82b3: ms-python.python
+[2022-03-31 09:12:04.759] [sharedprocess] [info] Renamed to /root/.vscode/extensions/ms-python.python-2022.4.0
+[2022-03-31 09:12:04.767] [sharedprocess] [info] Extracting completed. ms-python.python
+[2022-03-31 09:12:04.965] [sharedprocess] [info] Extension installed successfully: ms-python.python
+[2022-03-31 09:12:19.979] [sharedprocess] [info] Downloaded extension: ms-python.vscode-pylance /home/anonymous/arbaminch/TouristMap/~/.vscode-root/CachedExtensionVSIXs/ms-python.vscode-pylance-2022.3.4
+[2022-03-31 09:12:21.393] [sharedprocess] [info] Extracted extension to /root/.vscode/extensions/.54b4c2dc-0f48-4ce5-bea8-e91b12993fdd: ms-python.vscode-pylance
+[2022-03-31 09:12:21.681] [sharedprocess] [info] Renamed to /root/.vscode/extensions/ms-python.vscode-pylance-2022.3.4
+[2022-03-31 09:12:21.688] [sharedprocess] [info] Extracting completed. ms-python.vscode-pylance
+[2022-03-31 09:12:21.870] [sharedprocess] [info] Extension installed successfully: ms-python.vscode-pylance

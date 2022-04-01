@@ -1,0 +1,10 @@
+[2022-03-29 17:47:36.280] [renderer1] [error] ["Error: Unknown or unsupported transport “disabled” for address “disabled:”"]
+[2022-03-29 17:47:36.281] [renderer1] [warning] Settings Sync: Accounts are not initialized
+[2022-03-29 17:47:48.114] [renderer1] [error] ["Error: Unknown or unsupported transport “disabled” for address “disabled:”"]
+[2022-03-29 17:47:48.114] [renderer1] [warning] Settings Sync: Accounts are not initialized
+[2022-03-29 17:47:48.542] [renderer1] [warning] No search provider registered for scheme: file, waiting
+[2022-03-29 17:48:54.015] [renderer1] [error] [Extension Host] (node:6445) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `code --trace-deprecation ...` to show where the warning was created)
+[2022-03-29 21:05:06.682] [renderer1] [error] [File Watcher (universal)] restarting watcher after error: terminated by itself with code undefined, signal: SIGSEGV
+[2022-03-29 21:19:04.167] [renderer1] [error] [Extension Host] (node:23341) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `code --trace-deprecation ...` to show where the warning was created)

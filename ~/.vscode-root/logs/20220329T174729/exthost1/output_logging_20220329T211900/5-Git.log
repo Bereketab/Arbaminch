@@ -1,0 +1,24 @@
+[2022-03-29T18:19:02.640Z] Validating found git in: git
+[2022-03-29T18:19:02.654Z] Using git 2.25.1 from git
+[2022-03-29T18:19:02.670Z] > git rev-parse --git-dir [2ms]
+[2022-03-29T18:19:02.674Z] Open repository: /home/anonymous/arbaminch
+[2022-03-29T18:19:02.761Z] > git rev-parse --git-dir [0ms]
+[2022-03-29T18:19:02.763Z] Open repository: /home/anonymous/Desktop/behagerlij/behagerlij
+[2022-03-29T18:19:02.783Z] > git ls-files --stage -- /home/anonymous/arbaminch/TouristMap/photoapp/models.py [2ms]
+[2022-03-29T18:19:08.942Z] > git symbolic-ref --short HEAD [14ms]
+[2022-03-29T18:19:08.998Z] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main [48ms]
+[2022-03-29T18:19:09.016Z] > git remote --verbose [1ms]
+[2022-03-29T18:19:09.017Z] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [12ms]
+[2022-03-29T18:19:09.043Z] > git config --get commit.template [4ms]
+[2022-03-29T18:19:44.155Z] > git ls-files --stage -- /home/anonymous/Desktop/behagerlij/behagerlij/myprofile/views.py [2ms]
+[2022-03-29T18:19:44.167Z] > git cat-file -s 0c389a44c043b95fce24910e13ecc1298d2e8ae2 [7ms]
+[2022-03-29T18:19:59.112Z] > git symbolic-ref --short HEAD [1ms]
+[2022-03-29T18:19:59.117Z] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main [1ms]
+[2022-03-29T18:19:59.126Z] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [5ms]
+[2022-03-29T18:19:59.126Z] > git remote --verbose [1ms]
+[2022-03-29T18:19:59.139Z] > git config --get commit.template [3ms]
+[2022-03-29T18:20:13.699Z] > git symbolic-ref --short HEAD [1ms]
+[2022-03-29T18:20:13.707Z] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track) refs/heads/main refs/remotes/main [1ms]
+[2022-03-29T18:20:13.722Z] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [7ms]
+[2022-03-29T18:20:13.722Z] > git remote --verbose [1ms]
+[2022-03-29T18:20:13.736Z] > git config --get commit.template [3ms]
