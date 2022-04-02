@@ -1,3 +1,38 @@
+function get_destination_destinatio_as_children(service_name,destinatio) {
+  var destination_destinatio = [];
+
+  destination_data.forEach(function (e) {
+    console.log(e['properties'].destinatio+'  '+e['properties'].status_of+'  '+service_name)
+
+    console.log(toString(e['properties'].status_of).localeCompare(toString(service_name)))
+
+  if(e['properties'].status_of ===service_name) {
+        destination_destinatio.push({ id: e['id'], text: e['properties'].destinatio })
+}
+})
+
+  return destination_destinatio
+}
+
+
+
+// function get_destination_destinatio_as_children(service_name,destinatio) {
+  //   var destination_destinatio = [];
+  //   let unique_objj = [
+  //     ...new Map(destination_data.map((item) => [item['properties'].destinatio, item])).values()
+  //   ]
+  //   $.each(unique_objj, function (index, value) {
+  //     if(value['properties'].status_of ===service_name) {
+  //       console.log(value['properties'].destinatio)
+  //         destination_destinatio.push({ id: value['id'], text: value['properties'].destinatio })              
+  // }         
+  //     });
+  
+  //   return destination_destinatio
+  // }
+
+
+
 {% load static %}
 
 <head>
@@ -25,12 +60,14 @@
   <link rel="stylesheet" href="{% static 'src/ol3-layerswitcher.css' %}" />
   <link rel="stylesheet" href="{% static 'src/layerswitcher.css' %}" />
   <link rel="stylesheet" href="{% static 'font/css/all.min.css' %}">
-<style>
-  table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-</style>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+  </style>
 </head>
 
 <body>
@@ -43,9 +80,10 @@
     <div class="left_area">
 
       <h3><span>Gammo-TRIP</span></h3>
+
       <div id='locate' style="left: 502px;position: relative; color: #d8fd28;"></div>
     </div>
-
+    <a href="{% url 'login'%}"></a>
   </header>
   <div id="change" class="sidebar">
     <ul class="nav nav-tabs" role="tablist">
@@ -57,10 +95,10 @@
     <!-- Tab panes -->
     <div class="tab-content">
       <div role="tabpanel" class="tab-pane active" id="home">
-        <div id="tree" ></div>
-        <div id="tree2" ></div>
+        <div id="tree"></div>
+        <div id="tree2"></div>
       </div>
-        
+
       <div role="tabpanel" class="tab-pane" id="profile"><input type="text" value="{% static 'images/' %}" id="h">
       </div>
     </div>
@@ -76,348 +114,202 @@
   <script src="{% static 'src/ol3-layerswitcher.js' %}"></script>
   <!-- <script src="{% static 'src/layerswitcher.js' %}"></script> -->
 
-  <script type="text/javascript">
+  <script type="module">
+    import { serviceStyle } from "{% static 'mapstyle.js' %}";
+    import { compareValues } from "{% static 'comparevalues.js' %}";
+    import { map, select_interaction, service_vector } from "{% static 'functions.js' %}";
+
     $(document).ready(function () {
-      var select = new ol.interaction.Select({});
-      var vectorSource_ = new ol.source.Vector({
-      });
-      var view = new ol.View({
-        center: [37.121327027069874, 5.722531225442945],
-        zoom: 8,
-        projection: 'EPSG:4326'
-      })
-      var vectorLayer_ = new ol.layer.Vector({
-        source: vectorSource_,
-      });
-      var to_be_children_d = [];
-      var to_be_children = [];
-      var children_node2 = [];
-      var vectorSource = new ol.source.Vector();
-      var obj = {};
-      var objd = {};
-      objd['id'] = '01';
-      objd['text'] = 'Destinations';
-      obj['id'] = '01';
-      obj['text'] = 'Services';
-      function compareValues(key, order = 'asc') {
-        return function innerSort(a, b) {
-          if (!a.hasOwnProperty(key) || !b.hasOwnProperty(key)) {
-            return 0;
+      var service_data;
+      var destination_data;
+      var service_type = [];
+      var destination_type_status = [];
+      var service_names = [];
+      var feature_source = new ol.source.Vector();
+      var service_type_list = {};
+      var destination_type_list = {};
+      destination_type_list['id'] = '01';
+      destination_type_list['text'] = 'Destinations';
+      service_type_list['id'] = '01';
+      service_type_list['text'] = 'Services';
+      function get_service_count(service_name) {
+        var count = 0;
+             service_data.forEach(function (e) {
+          if (e['properties'].service == service_name) {
+            count++
           }
-          const varA = (typeof a[key] === 'string')
-            ? a[key].toUpperCase() : a[key];
-          const varB = (typeof b[key] === 'string')
-            ? b[key].toUpperCase() : b[key];
-          let comparison = 0;
-          if (varA > varB) {
-            comparison = 1;
-          } else if (varA < varB) {
-            comparison = -1;
-          }
-          return (
-            (order === 'desc') ? (comparison * -1) : comparison
-          );
-        };
+        })
+        return count
       }
-      $.getJSON('http://localhost:8080/geoserver/arbaminch/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=arbaminch%3Adestination&maxFeatures=1000&outputFormat=application%2Fjson', function (data) {
-        var features = new ol.format.GeoJSON({ defaultDataProjection: 'EPSG:4326' }).readFeatures(data)
-        vectorSource.addFeatures(features);
-        let unique_obj = [
-          ...new Map(data['features'].map((item) => [item['properties'].status_of, item])).values()
-        ]
-        $.each(unique_obj, function (index, value) {
-          to_be_children_d.push({ id: value['id'], text: value['properties'].status_of + '(' + get_count(value['properties'].status_of) + ')', children: get_each_feature(value['properties'].status_of) })
-        });
-        function get_count(service_name) {
-          var count = 0;
-          data['features'].forEach(function (e) {
-
-            if (e['properties'].status_of == service_name) {
-              count++
-            }
-          })
-          return count
+      function get_destination_count(service_name) {
+        var count = 0;
+        destination_data.forEach(function (e) {
+        if (e['properties'].status_of == service_name) {
+          count++
         }
-        function get_each_feature(service_name) {
-          var children_node = [];
-          let unique_obj = [
-          ...new Map(data['features'].map((item) => [item['properties'].status_of, item])).values()
-        ]
-        unique_obj.forEach(function (e) {
-            if (e['properties'].status_of == service_name) {
-              children_node.push({ id: e['id'], text: e['properties'].destinatio })
-            }
-          })
-
-          return children_node
-        }
-        objd['children'] = to_be_children_d.sort(compareValues('text'))
-        tree2 = $('#tree2').tree({
-          primaryKey: 'id',
-          uiLibrary: 'bootstrap',
-          dataSource: [objd],
-          checkboxes: true,
-        });
-        console.log(to_be_children_d)
       })
-      $.getJSON('http://localhost:8080/geoserver/arbaminch/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=arbaminch%3Aservice&maxFeatures=1000&outputFormat=application%2Fjson', function (data) {
+        return count
+      }
+    
+      function get_service_name_as_children(service_name) {
+        var service_names = [];
+        service_data.forEach(function (e) {
+          if (e['properties'].service == service_name) {
+            service_names.push({ id: e['id'], text: e['properties'].full_name })
+          }
+        })
+        return service_names
+      }
+     function get_destination_destinatio_as_children(service_name) {
+  var destination_destinatio = [];
+
+  destination_data.forEach(function (e) {
+  if(e['properties'].status_of ===service_name) {
+        destination_destinatio.push({ id: e['id'], text: e['properties'].destinatio+'('+get_destination_destinatio_count(e['properties'].status_of,e['properties'].destinatio)+')',children: get_destination_name_as_children(e['properties'].status_of,e['properties'].destinatio)})
+}
+})
+
+  return destination_destinatio
+}
+function get_destination_destinatio_count(service_name,service_type) {
+        var count = 0;
+        destination_data.forEach(function (e) {
+          if(e['properties'].status_of ===service_name && e['properties'].destinatio===service_type ) {
+          count++
+        }
+      })
+        return count
+      }
+function get_destination_name_as_children(service_name,service_type) {
+  var destination_name = [];
+
+  destination_data.forEach(function (e) {
+  if(e['properties'].status_of ===service_name && e['properties'].destinatio===service_type ) {
+    destination_name.push({ id: e['id'], text: e['properties'].full_name })
+}
+})
+
+  return destination_name
+}
+      var url = 'http://localhost:8080/geoserver/arbaminch/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=arbaminch%3Aservice&maxFeatures=1000&outputFormat=application%2Fjson'
+      $.getJSON(url, function (data) {
         var features = new ol.format.GeoJSON({ defaultDataProjection: 'EPSG:4326' }).readFeatures(data)
-        vectorSource.addFeatures(features);
+        feature_source.addFeatures(features);
+        service_data = data['features'];
         let unique_obj = [
           ...new Map(data['features'].map((item) => [item['properties'].service, item])).values()
         ]
         $.each(unique_obj, function (index, value) {
-          to_be_children.push({ id: value['id'], text: value['properties'].service + '(' + get_count(value['properties'].service) + ')', children: get_each_feature(value['properties'].service) })
+          service_type.push({ id: value['id'], text: value['properties'].service + '(' + get_service_count(value['properties'].service) + ')', children: get_service_name_as_children(value['properties'].service) })
         });
-        function get_count(service_name) {
-          var count = 0;
-          data['features'].forEach(function (e) {
-
-            if (e['properties'].service == service_name) {
-              count++
-            }
-          })
-          return count
-        }
-        function get_each_feature(service_name) {
-          var children_node2 = [];
-          data['features'].forEach(function (e) {
-            if (e['properties'].service == service_name) {
-              children_node2.push({ id: e['id'], text: e['properties'].full_name})
-              // console.log(e['properties'])
-            }
-          })
-         
-          return children_node2
-        }
-        obj['children'] = to_be_children.sort(compareValues('text'))
+        service_type_list['children'] = service_type.sort(compareValues('text'))
 
         tree = $('#tree').tree({
           primaryKey: 'id',
           uiLibrary: 'bootstrap',
-          dataSource: [obj],
+          dataSource: [service_type_list],
           checkboxes: true,
         });
-        
-        function styleClick(service) {
-          var Icon = {
-            Bank: "\uf19c",
-            Bar: "\uf79f",
-            '': "\uf656",
-            'Police Station': '\ue02d',
-            'Market': '\uf07a',
-            'Restaurant': '\uf2e7',
-            'Clinic': '\uf7f2',
-            '​Restaurant,Hotel,Bar': '\uf2e7',
-            '​Café,Pension': '\uf236',
-            'Hospital': '\uf0f8',
-            'Church': '\uf51d',
-            'Hotel': '\uf594',
-            'Restaurant,Hotel': '\uf2e7',
-            'Church (Orthodox)': '\uf51d',
-            'Café,Restaurant': '\uf2e7',
-            'Tour,Ticket Office': '\uf0f2',
-            'Church(Orthodox)': '\uf51d',
-            'Church (Protestant)': '\uf51d',
-            'School': '\uf549',
-            'Garage': '\ue00a',
-            'Café, Hotel, Pension, Bar': '\uf236',
-            'Church(Protestant)': '\uf51d',
-            'Hospital(Health Center),Clinic': '\uf7f2',
-            'Market/Supper': '\uf07a',
-            'Pension': '\uf236',
-            'Garage,Tire repair': '\uf632',
-            'Stadium': '\uf1e3',
-            'Hospital(Health Center)': '\uf0f8',
-            'Cultural House': "\u10e00d",
-            'Restaurant,Bar': '\uf2e7',
-            'Gas Station': '\uf52f',
-            'Hospital(Clinic)': '\uf7f2',
-            'school': '\uf549',
-            'Park': '\uf400',
-            'Health Center': '\uf7f2',
-            'Café': '\uf0f4',
-            'Orthodox': '\uf51d',
-            'Protestant': '\uf51d',
-            'Restaurant , Bar': '\uf2e7',
-            'Motel': '\uf594',
-            'Muncipal': '\uf1ad',
-            'Pension, Bar': '\uf236',
-            'Café, Bank': '\uf0f4',
-            'Lodge': '\uf236',
-            'Pharmacy': '\uf46b',
-            'Health Post': '\uf7f2',
-            'Clinic, Pharmacy': '\uf7f2',
-            'Restaurant, Café,Pension': '\uf2e7',
-            'Restaurant, Bar': '\uf2e7',
-            'Restaurant,pension': '\uf2e7',
-            'Restaurant,Motel': '\uf2e7',
-            'Restuarant': '\uf2e6',
-            'Café, Restaurant': '\uf2e7',
-            'Restaurant, Café, Bar': '\uf2e7',
-            'Restaurant, Café': '\uf2e7',
-            'Restaurant, Hotel, Bar': '\uf2e7',
-            'Restaurant, Hotel': '\uf2e7',
-            '|Hotel': '\uf562',
-            'Restaurant, Ticket Office, Motel, Tire repair': '\uf2e7',
-            'Hotel, Bar, Restaurant,': '\uf2e7',
-            'Bank, Ticket Office,': "\uf19c",
-            'Restaurant, Ticket Office': '\uf2e7',
-            'Hotel, Bar, Ticket Office': '\uf594',
-            'Café, Pension, School, Protestant Church, Clinic': '\uf7f2',
-            'Café,Hospital, Pharmacy,Ticket Office': '\uf0f8',
-            'Café, Health Center': '\uf7f2',
-            'Education': '\uf549',
-            'Repari': '\uf5e3',
-            'Office': '\uf1ad',
-            'Health Center, Pharmacy': '\uf7f2',
-            'Health Post, Pharmacy': '\uf7f2',
-            'Restaurant,Café': '\uf2e7',
-            'Hotel,Restaurant,Café,': '\uf2e7',
-            'Restaurant,Café,Hotel': '\uf2e7',
-            'Hotel, Café': '\uf562',
-            'Gas station': '\uf52f',
-            'Hotel, Bar': '\uf562',
-            'Pharmacy, Clinic': '\uf7f2',
-            'hospital, Clinic, Spa': '\uf7f2',
-            'Café, Restaurant, Hotel': '\uf2e7',
-            'School, Protistant': '\uf549',
-            'Muslim': '\uf678',
-            'Spare part': '\ue00a',
-            'Manicipal': '\uf1ad',
-            'Protistant': '\uf51d',
-            'Church, Protistant': '\uf51d',
-            // and others in your webfont.ttf (change with corresponding utf8 code)
-          }
-          var Icon_ = {
-            Bank: "#754f34",
-            Bar: "#fc03c2",
-            '': "#3dfc03",
-            
-          }
-          // console.log(Icon[service])
-          return [
-            new ol.style.Style({
-              text: new ol.style.Text({
-                fill: new ol.style.Fill({
-                  color: Icon_[service]
-                }),
-                font: 'normal 24px FontAwesome',
-                text: Icon[service]
-              })
-            })
-          ];
-        }
-       
-        $('#tree ').change(function () {
-          // map.removeInteraction(select);
-          vectorSource_.clear()
-          vectorSource.forEachFeature(function (e) {
+        $('#tree').change(function () {
+          // map.getInteractions().pop();
+          service_vector.addFeature(e)
+          feature_source.forEachFeature(function (e) {
             if (tree.getCheckedNodes().indexOf(e.getId()) > -1) {
-              e.setStyle(styleClick(e.get('service')))
-              vectorSource_.addFeature(e)
-              map.getView().fit(vectorSource_.getExtent(), map.getSize());
+              e.setStyle(serviceStyle(e.get('service')))
+              service_vector.addFeature(e)
+              map.getView().fit(service_vector.getExtent(), map.getSize());
             }
           })
         });
       });
-      
-      var map = new ol.Map({
-        layers: [
-          new ol.layer.Tile({
-            source: new ol.source.Stamen({
-              layer: 'watercolor'
-            })
-          }),
-          new ol.layer.Tile({
-            source: new ol.source.Stamen({
-              layer: 'terrain-labels'
-            })
-          }),
-          new ol.layer.Tile({
-            title: 'Water color',
-            type: 'base',
-            visible: false,
-            source: new ol.source.Stamen({
-              layer: 'watercolor'
-            })
-          }),
-          new ol.layer.Tile({
-            title: 'OSM',
-            type: 'base',
-            visible: true,
-            source: new ol.source.OSM()
-          }),
 
-          vectorLayer_
-        ],
-        target: 'map',
-        controls: ol.control.defaults({
-          attributionOptions: /** @type {olx.control.AttributionOptions} */ ({
-            collapsible: false
+      var url = 'http://localhost:8080/geoserver/arbaminch/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=arbaminch%3Adestination&maxFeatures=1000&outputFormat=application%2Fjson'
+      $.getJSON(url, function (data) {
+        var features = new ol.format.GeoJSON({ defaultDataProjection: 'EPSG:4326' }).readFeatures(data)
+        feature_source.addFeatures(features);
+        destination_data = data['features'];
+        // console.log(destination_data)
+        let unique_obj_destination = [
+          ...new Map(data['features'].map((item) => [item['properties'].status_of, item])).values()
+        ]
+        $.each(unique_obj_destination, function (index, value) {
+                  // console.log()
+          destination_type_status.push({ id: value['id'], text: value['properties'].status_of + '(' + get_destination_count(value['properties'].status_of,value['id']) + ')',children:get_destination_destinatio_as_children(value['properties'].status_of) })
+        });
+        destination_type_list['children'] = destination_type_status.sort(compareValues('text'))
+
+        tree2 = $('#tree2').tree({
+          primaryKey: 'id',
+          uiLibrary: 'bootstrap',
+          dataSource: [destination_type_list],
+          checkboxes: true,
+        });
+        $('#tree2').change(function () {
+          // map.getInteractions().pop();
+          service_vector.addFeature(e)
+          feature_source.forEachFeature(function (e) {
+            if (tree2.getCheckedNodes().indexOf(e.getId()) > -1) {
+              // e.setStyle(serviceStyle(e.get('service')))
+              service_vector.addFeature(e)
+              map.getView().fit(service_vector.getExtent(), map.getSize());
+            }
           })
-        }),
-        view: view
+        });
       });
-      
-      map.addInteraction(select);
-      select.on('select', function(e) {
-        if(e.selected[0]){
-        Swal.fire({
-          width:'900px',
-          html:
-          "<table style='width: -moz-available'>"+
-            "<tr>"+
-              "<th>fid</th>"+
-              "<th>LAYER</th>"+
-              "<th>Full Name</th>"+
-              "<th>Short Name</th>"+ 	 	
-              "<th>Zone</th>"+
-              "<th>Wereda</th>"+
-              "<th>Kebele</th>"+
-              "<th>Phone Mobile</th>"+
-              "<th>Email</th>"+
-              "<th>Organization</th>"+
-              "<th>Service</th>"+
-              "</tr>"+
-              "<tr>"+
-                "<td>Alfreds Futterkiste</td>"+
-                "<td>Alfreds Futterkiste</td>"+
-                "<td>Alfreds Futterkiste</td>"+
-                "<td>Alfreds Futterkiste</td>"+
-                "<td>Alfreds Futterkiste</td>"+
-                "<td>Alfreds Futterkiste</td>"+
-                "<td>Alfreds Futterkiste</td>"+
-                "<td>Alfreds Futterkiste</td>"+
-                "<td>Alfreds Futterkiste</td>"+
-                "<td>Alfreds Futterkiste</td>"+
-                "<td>Alfreds Futterkiste</td>"+
-                "</tr>"+
-               
-                  "</table>" ,
-          imageUrl: '{% static "a1.jpg" %}',
-  imageHeight: 150,
-  title: e.selected[0].get('service'),
-  showClass: {
-    popup: 'animate__animated animate__fadeInDown'
-  },
-  hideClass: {
-    popup: 'animate__animated animate__fadeOutUp'
-  }
-})
-      }  
-      else{
-        // console.log(false)
-      }   
-     
-          }); 
+
+      map.addInteraction(select_interaction);
+      select_interaction.on('select', function (e) {
+        // console.log()
+        if (e.selected[0]) {
+          Swal.fire({
+            width: '900px',
+            html:
+              "<table style='width: -moz-available'>" +
+              "<tr>" +
+              "<th>Full Name</th>" +
+              "<th>Short Name</th>" +
+              "<th>Zone</th>" +
+              "<th>Wereda</th>" +
+              "<th>Kebele</th>" +
+              "<th>Phone Mobile</th>" +
+              "<th>Email</th>" +
+              "<th>Organization</th>" +
+              "<th>Service</th>" +
+              "</tr>" +
+              "<tr>" +
+              "<td>" + e.selected[0].get('full_name') + "</td>" +
+              "<td>" + e.selected[0].get('short_name') + "</td>" +
+              "<td>" + e.selected[0].get('zone') + "</td>" +
+              "<td>" + e.selected[0].get('wereda') + "</td>" +
+              "<td>" + e.selected[0].get('kebele') + "</td>" +
+              "<td>" + e.selected[0].get('phone_mobi') + "</td>" +
+              "<td>" + e.selected[0].get('email') + "</td>" +
+              "<td>" + e.selected[0].get('organizati') + "</td>" +
+              "<td>" + e.selected[0].get('service') + "</td>" +
+              "</tr>" +
+
+              "</table>",
+            imageUrl: '{% static "a1.jpg" %}',
+            imageHeight: 150,
+            title: e.selected[0].get('service'),
+            showClass: {
+              popup: 'animate__animated animate__fadeInDown'
+            },
+            hideClass: {
+              popup: 'animate__animated animate__fadeOutUp'
+            }
+          })
+        }
+        else {
+          // console.log(false)
+        }
+
+      });
       var layerSwitcher = new ol.control.LayerSwitcher({
         tipLabel: 'Légende' // Optional label for button
       });
       map.addControl(layerSwitcher);
     });
   </script>
-
 </body>
-
 </html>
