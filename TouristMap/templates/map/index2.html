@@ -1,91 +1,140 @@
-{% load static %}
-
+<!DOCTYPE html>
+{%load static%}
+<html dir="ltr" lang="en-US">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gammo tourist map</title>
-  <!-- <link rel="stylesheet" href="style.css"> -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
 
-  <link href="{% static 'dist/bootree.min.css' %}" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Simonetta:ital@1&family=Ubuntu:wght@300&@1&display=swap"
-    rel="stylesheet">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SemiColonWeb" />
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
-  <link rel="stylesheet" href="https://openlayers.org/en/v3.20.1/css/ol.css" type="text/css">
-  <script
-    src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
-  <script src="https://openlayers.org/en/v3.20.1/build/ol.js"></script>
-  <link rel="stylesheet" href="{% static 'src/ol3-layerswitcher.css' %}" />
-  <link rel="stylesheet" href="{% static 'src/layerswitcher.css' %}" />
-  <link rel="stylesheet" href="{% static 'font/css/all.min.css' %}">
-  <style>
-    table,
-    th,
-    td {
-      border: 1px solid black;
-      border-collapse: collapse;
-    }
-  </style>
+    <!-- Stylesheets
+    ============================================= -->
+    <link rel="stylesheet" href="{% static 'ol/css/ol.css' %}" type="text/css">
+    <!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
+    <!-- <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script> -->
+    <script src="{% static 'ol/build/ol.js' %}"></script>
+    <link href="{% static 'bootree.min.css' %}" rel="text/css"/>
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic|Lato:400,300,600,700" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="{% static 'canvas/css/bootstrap.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'canvas/style.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'canvas/css/dark.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'canvas/css/font-icons.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'canvas/css/animate.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'canvas/css/magnific-popup.css' %}" type="text/css" />
+
+    <link rel="stylesheet" href="{% static 'canvas/css/responsive.css' %}" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link href="{% static 'dist/bootree.min.css' %}" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'ui.css' %}">
+  
+    <!--[if lt IE 9]>
+    	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+
+    <!-- External JavaScripts
+    ============================================= -->
+	<script type="text/javascript" src="{% static 'canvas/js/jquery.js' %}"></script>
+	<script type="text/javascript" src="{% static 'canvas/js/plugins.js' %}"></script>
+
+    <!-- Document Title
+    ============================================= -->
+	<title>Header - Left Side Fixed with Trigger &amp; Push Wrapper | Canvas</title>
+
+    <style>.side-header #primary-menu, .side-header #primary-menu ul { font-family: 'Lato'; }</style>
+
 </head>
 
-<body>
+<body class="stretched side-header open-header push-wrapper close-header-on-scroll">
 
-  <input type="checkbox" id="check">
-  <header style="display: inline-table;">
-    <label for="check">
-      <i class="fas fa-bars" id="sidebar_btn"></i>
-    </label>
-    <div class="left_area">
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
 
-      <h3><span>Gammo-TRIP</span></h3>
+        <div id="header-trigger"><i class="icon-line-menu"></i><i class="icon-line-cross"></i></div>
 
-      <div id='locate' style="left: 502px;position: relative; color: #d8fd28;"></div>
-    </div>
-    <a href="{% url 'login'%}"></a>
-  </header>
-  <div id="change" class="sidebar">
-    <ul class="nav nav-tabs" role="tablist">
-      <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab"
-          data-toggle="tab">Catalog</a></li>
-      <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Route</a></li>
-    </ul>
+        <!-- Header
+        ============================================= -->
+        <header id="header" class="no-sticky">
 
-    <!-- Tab panes -->
-    <div class="tab-content">
-      <div role="tabpanel" class="tab-pane active" id="home">
-        <div id="tree"></div>
-        <div id="tree2"></div>
-      </div>
+            <div id="header-wrap">
 
-      <div role="tabpanel" class="tab-pane" id="profile">
-        <form method="post">
-          <label for="fname">From:</label><br>
-          <input type="text" id="from" name="from" placeholder="from..."><br>
-          <label for="lname">To:</label><br>
-          <input type="text" id="to" name="to" placeholder="to..."><br><br>
-          <input type="submit" value="Submit">
-        </form>
-      </div>
-    </div>
-  </div>
-  <div id="popup" title="Welcome to ol3"></div>
-  <!--sidebar end-->
-  <div class="content">
-    <div class="map" id="map"></div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="{% static 'dist/bootree.min.js' %}"></script>
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-  <script src="{% static 'src/ol3-layerswitcher.js' %}"></script>
-  <!-- <script src="{% static 'src/layerswitcher.js' %}"></script> -->
+                <div class="container clearfix">
 
+                    <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+                    <!-- Logo
+                    ============================================= -->
+                    <div id="logo" class="nobottomborder">
+                        <a href="index.html" class="standard-logo" data-dark-logo="{% static 'canvas/images/logo-side-dark.png' %}"><img src="{% static 'canvas/images/logo-side.png' %}" alt="Canvas Logo"></a>
+                        <a href="index.html" class="retina-logo" data-dark-logo="{% static 'canvas/images/logo-side-dark@2x.png' %}"><img src="{% static 'canvas/images/logo-side@2x.png' %}" alt="Canvas Logo"></a>
+                    </div><!-- #logo end -->
+
+                   
+						<div class="tabs tabs-alt tabs-tb clearfix" id="tab-8">
+
+							<ul class="tab-nav clearfix">
+								<li><a href="#tabs-30">Nunc tincidunt</a></li>
+								<li><a href="#tabs-31">Proin dolor</a></li>
+							</ul>
+
+							<div class="tab-container">
+								<div class="tab-content clearfix" id="tabs-30">
+                                    <div id="tree"></div>
+                                    <div id="tree2"></div>								
+                                </div>
+								<div class="tab-content clearfix" id="tabs-31">
+                                    <div class="col_half">
+                                        <label for="template-contactform-from">From <small>*</small></label>
+                                        <input type="text" id="from" name="from" value="" class="sm-form-control required" />
+                                    </div>
+                                    <div class="col_half">
+                                        <label for="template-contactform-to">To <small>*</small></label>
+                                        <input type="text" id="template-contactform-to" name="template-contactform-to" value="" class="sm-form-control required" />
+                                    </div>
+									</div>
+								
+
+							</div>
+
+						</div>
+                    <div class="clearfix visible-md visible-lg">
+                        <a href="#" class="social-icon si-small si-borderless si-facebook">
+                            <i class="icon-facebook"></i>
+                            <i class="icon-facebook"></i>
+                        </a>
+
+                        <a href="#" class="social-icon si-small si-borderless si-twitter">
+                            <i class="icon-twitter"></i>
+                            <i class="icon-twitter"></i>
+                        </a>
+
+                        <a href="#" class="social-icon si-small si-borderless si-gplus">
+                            <i class="icon-gplus"></i>
+                            <i class="icon-gplus"></i>
+                        </a>
+
+                        <a href="#" class="social-icon si-small si-borderless si-pinterest">
+                            <i class="icon-pinterest"></i>
+                            <i class="icon-pinterest"></i>
+                        </a>
+
+                        <a href="#" class="social-icon si-small si-borderless si-github">
+                            <i class="icon-github"></i>
+                            <i class="icon-github"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header><!-- #header end -->
+        <section id="slider" class="slider-parallax swiper_wrapper full-screen clearfix">
+            <div id="map"></div>
+        </section>
+        <script src="{% static 'src/ol3-layerswitcher.js' %}"></script>
+    <script type="text/javascript" src="{% static 'canvas/js/functions.js' %}"></script>
+    <script src="{% static 'dist/bootree.min.js' %}"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
   <script type="module">
     import { serviceStyle, destinationStyle } from "{% static 'mapstyle.js' %}";
     import { compareValues } from "{% static 'comparevalues.js' %}";
@@ -104,6 +153,24 @@
       destination_type_list['text'] = 'Destinations';
       service_type_list['id'] = '01';
       service_type_list['text'] = 'Services';
+      var avaliableFeatures=[] 
+
+      var url = 'http://localhost:8080/geoserver/arbaminch/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=arbaminch%3Aservice&maxFeatures=1000&outputFormat=application%2Fjson'
+      $.getJSON(url, function (data) {
+          
+            var features = new ol.format.GeoJSON({ defaultDataProjection: 'EPSG:4326' }).readFeatures(data)
+            feature_source.addFeatures(features);
+            service_data = data['features'];
+            service_data.forEach(function(e){
+                // console.log(e['properties'].full_name)
+                avaliableFeatures.push(e['properties'].full_name)
+                
+            })
+            
+        });
+       $( "#from" ).autocomplete({
+      source: avaliableFeatures
+    });
       function get_service_count(service_name) {
         var count = 0;
         service_data.forEach(function (e) {
@@ -204,7 +271,6 @@
           ...new Map(data['features'].map((item) => [item['properties'].status_of, item])).values()
         ]
         $.each(unique_obj_destination, function (index, value) {
-          // console.log()
           destination_type_status.push({ id: value['id'], text: value['properties'].status_of + '(' + get_destination_count(value['properties'].status_of, value['id']) + ')', children: get_destination_destinatio_as_children(value['properties'].status_of) })
         });
         destination_type_list['children'] = destination_type_status.sort(compareValues('text'))
@@ -229,7 +295,6 @@
         });
       });
       var tree_destination = $('#tree2');
-      // console.log(tree_destination[0].children);
 
       map.addInteraction(select_interaction);
       select_interaction.on('select', function (e) {
@@ -247,7 +312,6 @@
 
 
         if (e.selected[0]) {
-          console.log(e.selected[0].getId())
           Swal.fire({
             width: '900px',
             html:
@@ -291,7 +355,6 @@
           })
         }
         else {
-          // console.log(false)
         }
 
       });
@@ -302,5 +365,4 @@
     });
   </script>
 </body>
-
 </html>

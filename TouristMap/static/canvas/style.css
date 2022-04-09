@@ -2198,7 +2198,7 @@ body:not(.device-touch) #page-menu.dots-menu nav li .dots-menu-caption {
 	top: 0;
 	left: 0;
 	z-index: 10;
-	width: 302px;
+	width: 410px;
 	height: 100%;
 	background-color: #FFF;
 	border: none;
@@ -2208,14 +2208,14 @@ body:not(.device-touch) #page-menu.dots-menu nav li .dots-menu-caption {
 }
 
 .side-header #header-wrap {
-	width: 300px;
+	width: 410px;
 	height: 100%;
 	overflow: auto;
 	padding-right: 40px;
 }
 
 .side-header #header .container {
-	width: 302px !important;
+	width: 410px !important;
 	padding: 0 30px !important;
 	margin: 0 !important;
 }
@@ -2331,7 +2331,7 @@ body:not(.device-touch) #page-menu.dots-menu nav li .dots-menu-caption {
 }
 
 .side-header:not(.open-header) #wrapper {
-	margin: 0 0 0 302px !important;
+	margin: 0 0 0 410px !important;
 	width: auto !important;
 }
 
@@ -2346,13 +2346,13 @@ body:not(.device-touch) #page-menu.dots-menu nav li .dots-menu-caption {
 
 .side-header.open-header.push-wrapper { overflow-x: hidden; }
 
-.side-header.open-header #header { left: -302px; }
+.side-header.open-header #header { left: -410px; }
 
 .side-header.open-header.side-header-open #header { left: 0;top: inherit; }
 
 .side-header.open-header #wrapper { left: 0; }
 
-.side-header.open-header.push-wrapper.side-header-open #wrapper { left: 302px; }
+.side-header.open-header.push-wrapper.side-header-open #wrapper { left: 410px; }
 
 #header-trigger { display: none; }
 
@@ -2373,7 +2373,7 @@ body:not(.device-touch) #page-menu.dots-menu nav li .dots-menu-caption {
 }
 
 .side-header.open-header.side-header-open #header-trigger {   
-	left: 226px;
+	left: 378px;
 	top: 7px;
 	background: blueviolet;
    }
@@ -2404,11 +2404,11 @@ body:not(.device-touch) #page-menu.dots-menu nav li .dots-menu-caption {
 	border-left: 1px solid #EEE;
 }
 
-.side-header.side-header-right:not(.open-header) #wrapper { margin: 0 302px 0 0 !important; }
+.side-header.side-header-right:not(.open-header) #wrapper { margin: 0 410px 0 0 !important; }
 
 .side-header.side-header-right.open-header #header {
 	left: auto;
-	right: -302px;
+	right: -410px;
 }
 
 .side-header.side-header-right.open-header.side-header-open #header {
@@ -2416,7 +2416,7 @@ body:not(.device-touch) #page-menu.dots-menu nav li .dots-menu-caption {
 	right: 0;
 }
 
-.side-header.side-header-right.open-header.push-wrapper.side-header-open #wrapper { left: -302px; }
+.side-header.side-header-right.open-header.push-wrapper.side-header-open #wrapper { left: -410px; }
 
 .side-header.side-header-right.open-header #header-trigger {
 	left: auto;

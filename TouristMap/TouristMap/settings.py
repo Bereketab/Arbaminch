@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'dal',
     'dal_select2',
+    'service'
     ]
 
 MIDDLEWARE = [

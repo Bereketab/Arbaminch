@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+{%load static%}
+<html dir="ltr" lang="en-US">
+
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="SemiColonWeb" />
+
+    <!-- Stylesheets
+    ============================================= -->
+    <link rel="stylesheet" href="{% static 'ol/css/ol.css' %}" type="text/css">
+    <!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
+    <!-- <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script> -->
+    <script src="{% static 'ol/build/ol.js' %}"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+        href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic|Lato:400,300,600,700"
+        rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="{% static 'canvas/css/bootstrap.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'canvas/style.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'canvas/css/dark.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'canvas/css/font-icons.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'canvas/css/animate.css' %}" type="text/css" />
+    <link rel="stylesheet" href="{% static 'canvas/css/magnific-popup.css' %}" type="text/css" />
+
+    <link rel="stylesheet" href="{% static 'canvas/css/responsive.css' %}" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link href="{% static 'dist/bootree.min.css' %}" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'ui.css' %}">
+
+    <!--[if lt IE 9]>
+    	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+
+    <!-- External JavaScripts
+    ============================================= -->
+    <script type="text/javascript" src="{% static 'canvas/js/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'canvas/js/plugins.js' %}"></script>
+
+    <!-- Document Title
+    ============================================= -->
+    <title>Ethio Tourist</title>
+
+    <style>
+        .side-header #primary-menu,
+        .side-header #primary-menu ul {
+            font-family: 'Lato';
+        }
+    </style>
+
+</head>
+
+<body class="stretched side-header open-header push-wrapper ">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <div id="header-trigger"><i class="icon-line-menu"></i><i class="icon-line-cross"></i></div>
+
+        <!-- Header
+        ============================================= -->
+        <header id="header" class="no-sticky">
+
+            <div id="header-wrap">
+
+                <div class="container clearfix">
+
+                    <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+                    <!-- Logo
+                    ============================================= -->
+                    <div id="logo" class="nobottomborder">
+                        <a href="index.html" class="standard-logo"
+                            data-dark-logo="{% static 'canvas/images/logo-side-dark.png' %}"><img
+                                src="{% static 'canvas/images/logo-side.png' %}" alt="Canvas Logo"></a>
+                        <a href="index.html" class="retina-logo"
+                            data-dark-logo="{% static 'canvas/images/logo-side-dark@2x.png' %}"><img
+                                src="{% static 'canvas/images/logo-side@2x.png' %}" alt="Canvas Logo"></a>
+                    </div><!-- #logo end -->
+
+
+                    <div class="tabs tabs-alt tabs-tb clearfix" id="tab-8">
+
+                        <ul class="tab-nav clearfix">
+                            <li><a href="#tabs-30">Catalog</a></li>
+                            <li><a href="#tabs-31">Route</a></li>
+                        </ul>
+
+                        <div class="tab-container">
+                            <div class="tab-content clearfix" id="tabs-30">
+                                <div id="tree"></div>
+                                <div id="tree2"></div>
+                            </div>
+                            <div class="tab-content clearfix" id="tabs-31" style="overflow: scroll;">
+                                <div class="col_full">
+                                    <label for="template-contactform-from">From <small>*</small></label>
+                                    <input type="text" id="from" name="template-contactform-from" value=""
+                                        class="sm-form-control required" />
+                                </div>
+                                <div class="col_full">
+                                    <label for="template-contactform-to">To <small>*</small></label>
+                                    <input type="text" id="to" name="to" value="" class="sm-form-control required" />
+                                </div>
+                                <div id="clear_fields" class="col_full">
+                                    <a href="#"
+                                        class="button button-rounded button-reveal button-large button-yellow button-light"><i
+                                            class="icon-trash2"></i><span>Clear</span></a>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="clearfix visible-md visible-lg">
+                        <a href="#" class="social-icon si-small si-borderless si-facebook">
+                            <i class="icon-facebook"></i>
+                            <i class="icon-facebook"></i>
+                        </a>
+
+                        <a href="#" class="social-icon si-small si-borderless si-twitter">
+                            <i class="icon-twitter"></i>
+                            <i class="icon-twitter"></i>
+                        </a>
+
+                        <a href="#" class="social-icon si-small si-borderless si-gplus">
+                            <i class="icon-gplus"></i>
+                            <i class="icon-gplus"></i>
+                        </a>
+
+                        <a href="#" class="social-icon si-small si-borderless si-pinterest">
+                            <i class="icon-pinterest"></i>
+                            <i class="icon-pinterest"></i>
+                        </a>
+
+                        <a href="#" class="social-icon si-small si-borderless si-github">
+                            <i class="icon-github"></i>
+                            <i class="icon-github"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header><!-- #header end -->
+        <section id="slider" class="slider-parallax swiper_wrapper full-screen clearfix">
+            <div id="map"></div>
+        </section>
+        <script src="{% static 'src/ol3-layerswitcher.js' %}"></script>
+        <script type="text/javascript" src="{% static 'canvas/js/functions.js' %}"></script>
+        <script src="{% static 'dist/bootree.min.js' %}"></script>
+        <script src="{% static 'autocom.js' %}"></script>
+        <!-- <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script> -->
+        <script type="module">
+            import { serviceStyle, destinationStyle } from "{% static 'mapstyle.js' %}";
+            import { compareValues } from "{% static 'comparevalues.js' %}";
+            import { map, select_interaction, service_vector, destination_vector, nearest_vertex } from "{% static 'functions.js' %}";
+            $(document).ready(function () {
+                $('#from').val('');
+                $('#to').val('');
+                var service_data;
+                var destination_data;
+                var service_type = [];
+                var destination_type_status = [];
+                var service_names = [];
+                var feature_source = new ol.source.Vector();
+                var service_type_list = {};
+                var destination_type_list = {};
+                destination_type_list['id'] = '01';
+                destination_type_list['text'] = 'Destinations';
+                service_type_list['id'] = '01';
+                service_type_list['text'] = 'Services';
+                var avaliableFeatures = [];
+                var url_destination = 'http://localhost:8080/geoserver/arbaminch/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=arbaminch%3Adestination&maxFeatures=1000&outputFormat=application%2Fjson'
+                var url_service = 'http://localhost:8080/geoserver/arbaminch/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=arbaminch%3Aservice&maxFeatures=1000&outputFormat=application%2Fjson'
+                $('#clear_fields').click(function () {
+                    $('#from').val('');
+                    $('#to').val('');
+                    map.getLayers().forEach(layer => {
+//   if (layer.get('name') && layer.get('name') == 'flag_vectorLayer'){
+      map.removeLayer(layer)
+//   }
+});
+                });
+                var wmsSource = new ol.source.ImageWMS({
+                    url: 'http://localhost:8080/geoserver/wms',
+                    params: { 'LAYERS': 'cite:Streets_WGS_1984' },
+                    serverType: 'geoserver',
+                    crossOrigin: 'anonymous'
+                });
+
+                var wmsLayer = new ol.layer.Image({
+                    source: wmsSource
+                });
+                //   map.addLayer(wmsLayer);
+                //   map.getView().fit(wmsLayer.getExtent(), map.getSize());
+                $.getJSON(url_service, function (data) {
+                    var features = new ol.format.GeoJSON({ defaultDataProjection: 'EPSG:4326' }).readFeatures(data)
+                    feature_source.addFeatures(features);
+                    service_data = data['features'];
+                    service_data.forEach(function (e) {
+                        avaliableFeatures.push(e['properties'].full_name)
+
+                    })
+
+                });
+                $.getJSON(url_destination, function (data) {
+                    var features = new ol.format.GeoJSON({ defaultDataProjection: 'EPSG:4326' }).readFeatures(data)
+                    feature_source.addFeatures(features);
+                    destination_data = data['features'];
+                    destination_data.forEach(function (e) {
+                        avaliableFeatures.push(e['properties'].full_name)
+
+                    })
+
+                });
+
+                avaliableFeatures = avaliableFeatures.sort(function (a, b) {
+                    return a.localeCompare(b); //using String.prototype.localCompare()
+                })
+                var route_point_style = new ol.style.Style({
+                    image: new ol.style.Circle({
+                        radius: 7,
+                        fill: new ol.style.Fill({ color: 'red' }),
+                        stroke: new ol.style.Stroke({
+                            color: [255, 0, 0], width: 2
+                        })
+                    })
+                })
+                $("#to").autocomplete({
+                    source: avaliableFeatures,
+                    autoFill: true,
+                    select: function (event, ui) {
+                        var label = ui.item.label;
+                        var value = ui.item.value;
+                        feature_source.forEachFeature(function (e) {
+                            if (e.get('full_name') == value) {
+                                service_vector.clear()
+                                var x_coord = e.getGeometry().getCoordinates()[0]
+                                var y_coord = e.getGeometry().getCoordinates()[1]
+                                var nearst_vertex = 'http://localhost:8080/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=arbaminch_routing:nearest_vertex&viewparams=x:' + x_coord + ';y:' + y_coord + ';&outputformat=application/json'
+                                $.getJSON(nearst_vertex, function (data) {
+                                    var features_ = new ol.format.GeoJSON({ defaultDataProjection: 'EPSG:4326' }).readFeatures(data)
+                                    var featuress = nearest_vertex.getFeatures();
+                                    featuress.forEach(function(e){
+                                        if(e.get('to')){
+                                        nearest_vertex.removeFeatures(e);
+                                    }
+                                    })
+                                    
+                                    nearest_vertex.addFeatures(features_);
+                                })
+
+                            }
+                        })
+
+                    }
+                });
+                
+                $("#from").autocomplete({
+                    source: avaliableFeatures,
+                    autoFill: true,
+                    select: function (event, ui) {
+                        var label = ui.item.label;
+                        var value = ui.item.value;
+                        feature_source.forEachFeature(function (e) {
+                            if (e.get('full_name') == value) {
+                                service_vector.clear()
+                                var x_coord = e.getGeometry().getCoordinates()[0]
+                                var y_coord = e.getGeometry().getCoordinates()[1]
+                                var nearst_vertex = 'http://localhost:8080/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typeName=arbaminch_routing:nearest_vertex&viewparams=x:' + x_coord + ';y:' + y_coord + ';&outputformat=application/json'
+                                $.getJSON(nearst_vertex, function (data) {
+                                    var features_ = new ol.format.GeoJSON({geometryName:'from', defaultDataProjection: 'EPSG:4326' }).readFeatures(data)
+                                    var featuress = nearest_vertex.getFeatures();
+                                    featuress.forEach(function(e){
+                                        if(e.get('from')){
+                                        nearest_vertex.removeFeatures(e);
+                                    }
+                                        // console.log()
+                                    })
+                                    
+                                    
+                                    nearest_vertex.addFeatures(features_);
+                                })
+
+                            }
+                        })
+
+                    }
+                });
+                function get_service_count(service_name) {
+                    var count = 0;
+                    service_data.forEach(function (e) {
+                        if (e['properties'].service == service_name) {
+                            count++
+                        }
+                    })
+                    return count
+                }
+                function get_destination_count(service_name) {
+                    var count = 0;
+                    destination_data.forEach(function (e) {
+                        if (e['properties'].status_of == service_name) {
+                            count++
+                        }
+                    })
+                    return count
+                }
+
+                function get_service_name_as_children(service_name) {
+                    var service_names = [];
+                    service_data.forEach(function (e) {
+                        if (e['properties'].service == service_name) {
+                            service_names.push({ id: e['id'], text: e['properties'].full_name })
+                        }
+                    })
+                    return service_names
+                }
+                function get_destination_destinatio_as_children(service_name) {
+                    var destination_destinatio = [];
+
+                    destination_data.forEach(function (e) {
+                        if (e['properties'].status_of === service_name) {
+                            destination_destinatio.push({ id: e['id'], text: e['properties'].destinatio + '(' + get_destination_destinatio_count(e['properties'].status_of, e['properties'].destinatio) + ')', children: get_destination_name_as_children(e['properties'].status_of, e['properties'].destinatio) })
+                        }
+                    })
+
+                    return destination_destinatio
+                }
+                function get_destination_destinatio_count(service_name, service_type) {
+                    var count = 0;
+                    destination_data.forEach(function (e) {
+                        if (e['properties'].status_of === service_name && e['properties'].destinatio === service_type) {
+                            count++
+                        }
+                    })
+                    return count
+                }
+                function get_destination_name_as_children(service_name, service_type) {
+                    var destination_name = [];
+
+                    destination_data.forEach(function (e) {
+                        if (e['properties'].status_of === service_name && e['properties'].destinatio === service_type) {
+                            destination_name.push({ id: e['id'], text: e['properties'].full_name })
+                        }
+                    })
+
+                    return destination_name
+                }
+                $.getJSON(url_service, function (data) {
+                    var features = new ol.format.GeoJSON({ defaultDataProjection: 'EPSG:4326' }).readFeatures(data)
+                    feature_source.addFeatures(features);
+                    service_data = data['features'];
+                    let unique_obj = [
+                        ...new Map(data['features'].map((item) => [item['properties'].service, item])).values()
+                    ]
+                    $.each(unique_obj, function (index, value) {
+                        service_type.push({ id: value['id'], text: value['properties'].service + '(' + get_service_count(value['properties'].service) + ')', children: get_service_name_as_children(value['properties'].service) })
+                    });
+                    service_type_list['children'] = service_type.sort(compareValues('text'))
+
+                    tree = $('#tree').tree({
+                        primaryKey: 'id',
+                        uiLibrary: 'bootstrap',
+                        dataSource: [service_type_list],
+                        checkboxes: true,
+                    });
+                    $('#tree').change(function () {
+                        service_vector.clear()
+                        feature_source.forEachFeature(function (e) {
+                            if (tree.getCheckedNodes().indexOf(e.getId()) > -1) {
+                                e.setStyle(serviceStyle(e.get('service')))
+                                service_vector.addFeature(e)
+
+                                map.getView().fit(service_vector.getExtent(), map.getSize());
+                            }
+
+                        })
+                    });
+                });
+
+                var url = 'http://localhost:8080/geoserver/arbaminch/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=arbaminch%3Adestination&maxFeatures=1000&outputFormat=application%2Fjson'
+                $.getJSON(url_destination, function (data) {
+                    var features = new ol.format.GeoJSON({ defaultDataProjection: 'EPSG:4326' }).readFeatures(data)
+                    feature_source.addFeatures(features);
+                    destination_data = data['features'];
+                    let unique_obj_destination = [
+                        ...new Map(data['features'].map((item) => [item['properties'].status_of, item])).values()
+                    ]
+                    $.each(unique_obj_destination, function (index, value) {
+                        destination_type_status.push({ id: value['id'], text: value['properties'].status_of + '(' + get_destination_count(value['properties'].status_of, value['id']) + ')', children: get_destination_destinatio_as_children(value['properties'].status_of) })
+                    });
+                    destination_type_list['children'] = destination_type_status.sort(compareValues('text'))
+
+                    tree2 = $('#tree2').tree({
+                        primaryKey: 'id',
+                        uiLibrary: 'bootstrap',
+                        dataSource: [destination_type_list],
+                        checkboxes: true,
+                    });
+                    $('#tree2').change(function () {
+                        destination_vector.clear()
+                        feature_source.forEachFeature(function (e) {
+                            if (tree2.getCheckedNodes().indexOf(e.getId()) > -1) {
+                                e.setStyle(destinationStyle(e.get('destinatio')));
+                                destination_vector.addFeature(e)
+                                map.getView().fit(destination_vector.getExtent(), map.getSize());
+                            }
+                            if (tree2.getCheckedNodes().indexOf(e.getId()) == -1) {
+                            }
+                        })
+                    });
+                });
+                var tree_destination = $('#tree2');
+                map.addInteraction(select_interaction);
+                select_interaction.on('select', function (e) {
+                    function getPhoto(request) {
+                        {% for item in obj %}
+                        // if item.
+                        var matches = '{{item.service}}'.match(/\((.*?)\)/);
+                        if (matches[1] == request) {
+                            var result = '{{item.image.url}}'
+                        }
+                        {% endfor %}
+                        return result
+
+                    }
+
+                    if (e.selected[0]) {
+                        Swal.fire({
+                            width: '900px',
+                            html:
+                                "<img src=" + getPhoto(e.selected[0].getId().slice(e.selected[0].getId().lastIndexOf('.') + 1)) + " width='300px' height='200px'>" +
+
+                                "<table style='width: -moz-available'>" +
+                                e.selected[0].get('service') +
+                                "<tr>" +
+                                "<th>Full Name</th>" +
+                                "<th>Short Name</th>" +
+                                "<th>Zone</th>" +
+                                "<th>Wereda</th>" +
+                                "<th>Kebele</th>" +
+                                "<th>Phone Mobile</th>" +
+                                "<th>Email</th>" +
+                                "<th>Organization</th>" +
+                                "<th>Service</th>" +
+                                "</tr>" +
+                                "<tr>" +
+                                "<td>" + e.selected[0].get('full_name') + "</td>" +
+                                "<td>" + e.selected[0].get('short_name') + "</td>" +
+                                "<td>" + e.selected[0].get('zone') + "</td>" +
+                                "<td>" + e.selected[0].get('wereda') + "</td>" +
+                                "<td>" + e.selected[0].get('kebele') + "</td>" +
+                                "<td>" + e.selected[0].get('phone_mobi') + "</td>" +
+                                "<td>" + e.selected[0].get('email') + "</td>" +
+                                "<td>" + e.selected[0].get('organizati') + "</td>" +
+                                "<td>" + e.selected[0].get('service') + "</td>" +
+                                "</tr>" +
+
+                                "</table>",
+                            imageUrl: '{% static "a1.jpg" %}',
+                            imageHeight: 150,
+                            // title: e.selected[0].get('service'),
+                            showClass: {
+                                popup: 'animate__animated animate__fadeInDown'
+                            },
+                            hideClass: {
+                                popup: 'animate__animated animate__fadeOutUp'
+                            }
+                        })
+                    }
+                    else {
+                        // console.log(false)
+                    }
+
+                });
+                var layerSwitcher = new ol.control.LayerSwitcher({
+                    tipLabel: 'Légende' // Optional label for button
+                });
+                map.addControl(layerSwitcher);
+            });
+        </script>
+</body>
+
+</html>
